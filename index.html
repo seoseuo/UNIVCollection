@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<head>
+<head>  
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>서승권의 블로그에 오신 것을 환영합니다.</title>
 
     <style>
@@ -9,15 +11,27 @@
             src: url("210\ Yeonggot\ Regular.ttf") format("opentype");
         }
 
-        body {
-            margin-left: 25%;
-            background-color: rgb(228, 228, 228);   
+        :root {
+            --maincolor : #4e4e4e ;
         }
-     
+
+        body {
+            
+            background-color: rgb(228, 228, 228);  
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            
+            
+        }
+
         .titleBody {
             font-family: "YF";
-            color: rgb(78, 78, 78);
+            color: var(--maincolor);
             font-size : 350%;  
+
+            text-align: right;
+            margin-right: 20px;
         }
 
 
@@ -25,22 +39,27 @@
             font-family: "YF";
             border: 0;
             background-color: transparent;
-            color: rgb(78, 78, 78);
+            color: var(--maincolor);
             font-size : large;
+            margin-left: 60px;
+
+            
             
         }
 
         .barButton:hover {
             color: white;
+            
         }
 
         .barMainButton {
             font-family: "YF";
             border: 0;
             background-color: transparent;
-            color: rgb(78, 78, 78);
+            color: var(--maincolor);
             font-size: 220%;
-            margin-left: 4%;
+            margin-left: 150px;
+
         }
 
         .barMainButton:hover {
@@ -48,11 +67,16 @@
         }
 
         .rightTitle {
+            color: var(--maincolor);
             font-size:230%;
+            text-align:start;
+            margin-left: 40px;
         }
 
         .rightSection {
-            text-align: left;
+            color: var(--maincolor);
+            text-align: start;
+            margin-left: 40px;        
         }
 
     </style>
@@ -69,41 +93,42 @@
     <div><!---page1 --->
        
         <div> <!---바 메뉴 div-->
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
             <button class ="barMainButton" type="button"  style='cursor:pointer;'>서승로그,</button>
-
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            
+             
             <button class ="barButton" type="button"  style='cursor:pointer;'>서승권</button>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            
             <button class ="barButton" type="button"  style='cursor:pointer;'>학업</button>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              
             <button class ="barButton" type="button"  style='cursor:pointer;'>학생자치기구</button>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-            <button class ="barButton" type="button"  style='cursor:pointer;'>개발 노트</button>
+             
+            <button class ="barButton" type="button"  style='cursor:pointer;'>개발 일지</button>
+            
         </div><!---바 메뉴 div-->
 
-        <br><br>
+        <br><br><br>
 
-        <table style="width: 70%;"> 
+        <table style="width: 850px ;"> 
         <tr> 
-            <td style="width: 40%;">
+            <td style="width: 310px;">
         
                 <div><!---왼쪽 타이틀,메인 사진-->
             
                     <div class="titleBody"> 
         
-                    &nbsp;&nbsp;&nbsp;서승로그, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;방문을 <br>환영합니다.
+                    서승로그, <br> 방문을&nbsp; <br>환영합니다.
            
                     </div>          
-                    <img src="메인잼민이사진.png" alt="서승권 메인 사진" style="width: 100%; ; height: 100%" >
+                    <img src="메인잼민이사진.png" alt="서승권 메인 사진" style="width: 310px; ; height: 380px" >
                 </div> <!--- 왼쪽 타이틀,메인 사진-->
         
             </td>
 
-            <td style="color: rgb(78, 78, 78);">
+            <td>
 
                 <div class="rightTitle">
                     <b>이 부분이 제목 부분입니다.<br></b> 
@@ -112,20 +137,38 @@
                 <br>
 
                 <div class="rightSection">
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
-                    안녕하세요? 여기서 입력할 내용들을 입력해주고 공백은 밑에 pre 코드에 공백을 넣어서 해결하면 됩니다. 기막힌 발상 우하하
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
                     
                 </div>
 
                 <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </pre>
             </td>
         </tr>
