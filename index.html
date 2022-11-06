@@ -13,6 +13,10 @@
 
         :root {
             --maincolor : #4e4e4e ;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none
         }
 
         body {
@@ -21,8 +25,7 @@
             display: flex;
             justify-content: center;
             margin-top: 5%;
-            
-            
+    
         }
 
         .titleBody {
@@ -35,22 +38,7 @@
         }
 
 
-        .barButton {  
-            font-family: "YF";
-            border: 0;
-            background-color: transparent;
-            color: var(--maincolor);
-            font-size : large;
-            margin-left: 60px;
 
-            
-            
-        }
-
-        .barButton:hover {
-            color: white;
-            
-        }
 
         .barMainButton {
             font-family: "YF";
@@ -58,12 +46,32 @@
             background-color: transparent;
             color: var(--maincolor);
             font-size: 220%;
-            margin-left: 150px;
-
+            margin-left: 120px;
         }
 
         .barMainButton:hover {
-            color: white;
+            cursor: pointer;
+            color: rgb(163, 163, 163);
+        }
+
+        ul, ol, li { list-style:none;}
+   
+        ul.myMenu {color: var(--maincolor); cursor:pointer;}
+        ul.myMenu > li { display:inline-block;  background: transparent; position:relative; }
+        
+        ul.myMenu > li ul.submenu { display: none; position:absolute; text-align: left;}
+        ul.myMenu > li:hover ul.submenu{display: block;}
+        ul.myMenu > li ul.submenu > li { display:inline-block; width:150px;  background:transparent; }
+        ul.myMenu > li ul.submenu > li:hover {color: rgb(163, 163, 163);}
+
+        .barButton {  
+            font-family: "YF"; 
+            border: 0;
+            background-color: transparent;
+            color: var(--maincolor);
+            font-size : large;
+            width: 150px;
+            
         }
 
         .rightTitle {
@@ -93,21 +101,45 @@
     <div><!---page1 --->
        
         <div> <!---바 메뉴 div-->
-            
-            <button class ="barMainButton" type="button"  style='cursor:pointer;'>서승로그,</button>
-            
-             
-            <button class ="barButton" type="button"  style='cursor:pointer;'>서승권</button>
 
+            <ul class="myMenu">
+            <button class ="barMainButton" type="button"  >서승로그,</button>
             
-            <button class ="barButton" type="button"  style='cursor:pointer;'>학업</button>
-
-              
-            <button class ="barButton" type="button"  style='cursor:pointer;'>학생자치기구</button>
-
-             
-            <button class ="barButton" type="button"  style='cursor:pointer;'>개발 일지</button>
+             <li class="menu1">
+                <button class ="barButton" type="button"  >서승권</button>
+                <ul class="menu1_s submenu">
+                    <li>서승권이란?</li>
+                </ul>
+            </li>
             
+            <li class="menu2">
+                <button class ="barButton" type="button"  >학업</button>
+                <ul class="menu2_s submenu">
+                    <li>이수 과목</li>
+                    <li>프로젝트 및 결과물</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu3">
+                <button class ="barButton" type="button">학생자치기구활동</button>
+                <ul class="menu3_s submenu">
+                    <li>H-all</li>
+                    <li>A:ble</li>
+                    <li>Defy</li>
+                    <li>그,_림</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu4">
+                <button class ="barButton" type="button">개발일지</button>
+                <ul class="menu3_s submenu">
+                    <li>블로그 개발일지</li>
+                </ul>
+            </li>
+            </ul>
+
         </div><!---바 메뉴 div-->
 
         <br><br><br>
