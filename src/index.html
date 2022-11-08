@@ -3,23 +3,27 @@
 <head>  
     <meta charset="UTF-8">
     <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+    maximum-scale=1.0, minimum-scale=1.0">
+
+
+    <script src="src/move.js">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
-
-    <script src="./move.js">
-
     </script>
-    <link href="main.css" type="text/css" rel="stylesheet">
-    <style> 
+    <link href="src/main.css" type="text/css" rel="stylesheet">
+    <style>
+
         :root {
             --maincolor : #4e4e4e ;
         }
-        body { 
+
+        body {   
             background-color: rgb(228, 228, 228);  
         }
         .barMainButton:hover {
             color: rgb(163, 163, 163);
-        } 
+        }
+
     </style>
 </head>
 <body>
@@ -30,20 +34,20 @@
         <div> <!---바 메뉴 div-->
 
             <ul class="myMenu">
-            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
+            <button class ="barMainButton" type="button" onclick="mainTogo(0)">서승로그,</button>
             
              <li class="menu1">
                 <button class ="barButton" type="button"  >서승권</button>
                 <ul class="menu1_s submenu">
-                    <li onclick="goTo(1)">서승권이란?</li>
+                    <li onclick="mainTogo(1)">서승권이란?</li>
                 </ul>
             </li>
             
             <li class="menu2">
                 <button class ="barButton" type="button"  >학업</button>
                 <ul class="menu2_s submenu">
-                    <li onclick="goTo(2)">이수 과목</li>
-                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                    <li onclick="mainTogo(2)">이수 과목</li>
+                    <li onclick="mainTogo(3)">프로젝트 및 결과물</li>
                 </ul>
             </li>
             
@@ -51,10 +55,10 @@
             <li class="menu3">
                 <button class ="barButton" type="button">학생자치기구활동</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(4)">H-all</li>
-                    <li onclick="goTo(5)">A:ble</li>
-                    <li onclick="goTo(6)">Defy</li>
-                    <li onclick="goTo(7)">그,_림</li>
+                    <li onclick="mainTogo(4)">H-all</li>
+                    <li onclick="mainTogo(5)">A:ble</li>
+                    <li onclick="mainTogo(6)">Defy</li>
+                    <li onclick="mainTogo(7)">그,_림</li>
                 </ul>
             </li>
             
@@ -62,7 +66,7 @@
             <li class="menu4">
                 <button class ="barButton" type="button">개발일지</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(8)">블로그 개발일지</li>
+                    <li onclick="mainTogo(8)">블로그 개발일지</li>
                 </ul>
             </li>
             </ul>
@@ -82,7 +86,7 @@
                     서승로그,<br> 방문을&nbsp; <br>환영합니다.
            
                     </div>          
-                    <img src="../pics/메인잼민이사진.png" alt="서승권 메인 사진" style="width: 350px; ; height: 400px" >
+                    <img src="pics/메인잼민이사진.png" alt="서승권 메인 사진" style="width: 350px; ; height: 400px" >
                 </div> <!--- 왼쪽 타이틀,메인 사진-->
         
             </td>
