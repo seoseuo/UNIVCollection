@@ -1,111 +1,25 @@
 <!DOCTYPE html>
 
 <head>  
-    <meta charset="EUC-KR">
+    <meta charset="UTF-8">
  
-    <title>���±��� ���α׿� ���� ���� ȯ���մϴ�.</title>
-    
+    <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+
     <script src="./move.js">
 
     </script>
-    
+    <link href="main.css" type="text/css" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: "YF";
-            src: url("./210\ Yeonggot\ Regular.ttf") format("opentype");
-        }
 
         :root {
             --maincolor :  rgb(239, 183, 225);
-            -webkit-user-select:none;
-            -moz-user-select:none;
-            -ms-user-select:none;
-            user-select:none;
         }
-
-
-        
-  
-
-        td,tr {
-            text-align: left;
-            vertical-align: top;
-        }
-
-
-        hr {
-            background: var(--maincolor);
-            height: 1px;
-        }
-
-
         body {
-            
             background-color: #190048;  
-            display: flex;
-            justify-content: center;
-            margin-top: 1%;
-    
         }
-
-        .titleBody {
-            font-family: "YF";
-            color: var(--maincolor);
-
-            font-size : 350%;  
-
-            text-align: right;
-            margin-right: 100px;
-        }
-
-        .barMainButton {
-            font-family: "YF";
-            border: 0;
-            background-color: transparent;
-            color: var(--maincolor);
-            font-size: 220%;
-            margin-left: 110px;
-        }
-
         .barMainButton:hover {
-            cursor: pointer;
             color: rgb(163, 163, 163);
-        }
-
-        ul, ol, li { list-style:none; font-style: bold;}
-   
-        ul.myMenu {color: var(--maincolor); cursor:pointer;}
-        ul.myMenu > li { display:inline-block; width: 150px; padding: 0;  position:relative; }
-        
-        ul.myMenu > li ul.submenu { display: none; position:absolute; background-color: transparent;}
-        ul.myMenu > li:hover ul.submenu{display: block; }
-        ul.myMenu > li ul.submenu > li { display:inline-block; width:150px;  background:transparent;}
-        ul.myMenu > li ul.submenu > li:hover {color: rgb(163, 163, 163); }
-
-        .barButton {  
-            font-family: "YF"; 
-            border: 0;
-            background-color: transparent;
-            color: var(--maincolor);
-            font-size : large;
-            width: 150px;
-        }
-
-        .barButton:hover{
-            text-decoration: underline;
-        }
-
-        .rightTitle {
-            color: var(--maincolor);
-            font-size:230%;
-            text-align:start;
-            margin-left: 40px;
-        }
-
-        .rightSection {
-            color: var(--maincolor);
-            text-align: start;
-            margin-left: 40px;        
         }
 
     </style>
@@ -115,47 +29,47 @@
     
     <div><!---page1 --->
        
-        <div> <!---�� �޴� div-->
+        <div> <!---바 메뉴 div-->
 
             <ul class="myMenu">
-            <button class ="barMainButton" type="button" onclick="goTo(0)">���·α�,</button>
+            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
             
              <li class="menu1">
-                <button class ="barButton" type="button"  >���±�</button>
+                <button class ="barButton" type="button"  >서승권</button>
                 <ul class="menu1_s submenu">
-                    <li onclick="goTo(1)">���±��̶�?</li>
+                    <li onclick="goTo(1)">서승권이란?</li>
                 </ul>
             </li>
             
             <li class="menu2">
-                <button class ="barButton" type="button"  >�о�</button>
+                <button class ="barButton" type="button"  >학업</button>
                 <ul class="menu2_s submenu">
-                    <li onclick="goTo(2)">�̼� ����</li>
-                    <li onclick="goTo(3)">������Ʈ �� �����</li>
+                    <li onclick="goTo(2)">이수 과목</li>
+                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
                 </ul>
             </li>
             
 
             <li class="menu3">
-                <button class ="barButton" type="button">�л���ġ�ⱸȰ��</button>
+                <button class ="barButton" type="button">학생자치기구활동</button>
                 <ul class="menu3_s submenu">
                     <li onclick="goTo(4)">H-all</li>
                     <li onclick="goTo(5)">A:ble</li>
                     <li onclick="goTo(6)">Defy</li>
-                    <li onclick="goTo(7)">��,_��</li>
+                    <li onclick="goTo(7)">그,_림</li>
                 </ul>
             </li>
             
 
             <li class="menu4">
-                <button class ="barButton" type="button">��������</button>
+                <button class ="barButton" type="button">개발일지</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(8)">���α� ��������</li>
+                    <li onclick="goTo(8)">블로그 개발일지</li>
                 </ul>
             </li>
             </ul>
 
-        </div><!---�� �޴� div-->
+        </div><!---바 메뉴 div-->
 
         <br><br><br>
 
@@ -163,30 +77,30 @@
         <tr> 
             <td style="width: 400px;" >
         
-                <div><!---���� Ÿ��Ʋ,���� ����-->
+                <div><!---왼쪽 타이틀,메인 사진-->
             
                     <div class="titleBody"> 
         
-                        ���л�Ȱ<br>��������<br>
+                        대학생활<br>수강과목<br>
            
                     </div>          
-                    <img src="../pics/seo2.png" alt="���±� ���� ����" style="width: 300px; ; height: 400px" >
-                </div> <!--- ���� Ÿ��Ʋ,���� ����-->
+                    <img src="../pics/seo2.png" alt="서승권 메인 사진" style="width: 300px; ; height: 400px" >
+                </div> <!--- 왼쪽 타이틀,메인 사진-->
         
             </td>
 
             <td>
 
                 <div class="rightTitle">
-                    <b>���б��� �ٴϸ鼭<br>���� �� �͵�</b><hr>
+                    <b>대학교를 다니면서<br>배우게 된 것들</b><hr>
                 </div>
                 
                 <br>
 
                 <div class="rightSection">
-                    �� �� ����Ʈ�� �� ���л�Ȱ�� �״�� ��� �ִ� ���α��Դϴ�.<br>
-                    ���α׸� �湮�Ͻ� ���� �����е鲲���� ��ܿ� ��ġ�� �޴�<br>
-                    Ŭ���Ͽ� ���ϴ� �Խù��� �����Ͻø� �ǰڽ��ϴ�.   
+                    이 웹 사이트는 제 대학생활을 그대로 담고 있는 블로그입니다.<br>
+                    블로그를 방문하신 내빈 여러분들께서는 상단에 위치한 메뉴<br>
+                    클릭하여 원하는 게시물을 정독하시면 되겠습니다.   
                 </div>
             </td>
         </tr>

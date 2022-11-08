@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "YF";
+    src: url("./210\ Yeonggot\ Regular.ttf") format("opentype");
+}
+
+td,tr {
+    text-align: left;
+    vertical-align: top;
+}
+
+hr {
+    background: var(--maincolor);
+    height: 5px;
+    border: 0;
+}
+
+:root {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.titleBody {
+    font-family: "YF";
+    color: var(--maincolor);
+
+    font-size : 350%;  
+
+    text-align: right;
+    margin-right: 100px;
+}
+
+.barMainButton {
+    font-family: "YF";
+    border: 0;
+    background-color: transparent;
+    color: var(--maincolor);
+    font-size: 220%;
+    margin-left: 110px;
+}
+
+.barMainButton:hover {
+    cursor: pointer;
+    
+}
+
+ul, ol, li { list-style:none; font-style: bold;}
+   
+        ul.myMenu {color: var(--maincolor); cursor:pointer;}
+        ul.myMenu > li { display:inline-block; width: 150px; padding: 0;  position:relative; }
+        
+        ul.myMenu > li ul.submenu { display: none; position:absolute; background-color: transparent;}
+        ul.myMenu > li:hover ul.submenu{display: block; }
+        ul.myMenu > li ul.submenu > li { display:inline-block; width:150px;  background:transparent;}
+        ul.myMenu > li ul.submenu > li:hover {color: rgb(163, 163, 163); }
+
+        .barButton {  
+            font-family: "YF"; 
+            border: 0;
+            background-color: transparent;
+            color: var(--maincolor);
+            font-size : large;
+            width: 150px;
+        }
+
+        .barButton:hover{
+            text-decoration: underline;
+        }
+
+        .rightTitle {
+            color: var(--maincolor);
+            font-size:230%;
+            text-align:start;
+            margin-left: 40px;
+        }
+
+        .rightSection {
+            color: var(--maincolor);
+            text-align: start;
+            margin-left: 40px;        
+        }

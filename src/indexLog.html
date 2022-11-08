@@ -1,111 +1,25 @@
 <!DOCTYPE html>
 
 <head>  
-    <meta charset="EUC-KR">
+    <meta charset="UTF-8">
  
-    <title>¼­½Â±ÇÀÇ ºí·Î±×¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù.</title>
-    
+    <title>ì„œìŠ¹ê¶Œì˜ ë¸”ë¡œê·¸ì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+
     <script src="./move.js">
 
     </script>
-    
+    <link href="main.css" type="text/css" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: "YF";
-            src: url("./210\ Yeonggot\ Regular.ttf") format("opentype");
-        }
 
         :root {
             --maincolor : #584900 ;
-            -webkit-user-select:none;
-            -moz-user-select:none;
-            -ms-user-select:none;
-            user-select:none;
         }
-
-
-
-
-        td,tr {
-
-            text-align: left;
-            vertical-align: top;
-        }
-
-
-        hr {
-            background: var(--maincolor);
-            height: 1px;
-        }
-
-
-        body {
-            
+        body {   
             background-color: rgb(252, 240, 198);  
-            display: flex;
-            justify-content: center;
-            margin-top: 1%;
-    
         }
-
-        .titleBody {
-            font-family: "YF";
-            color: var(--maincolor);
-
-            font-size : 350%;  
-
-            text-align: right;
-            margin-right: 100px;
-        }
-
-        .barMainButton {
-            font-family: "YF";
-            border: 0;
-            background-color: transparent;
-            color: var(--maincolor);
-            font-size: 220%;
-            margin-left: 110px;
-        }
-
         .barMainButton:hover {
-            cursor: pointer;
-            color: rgb(163, 163, 163);
-        }
-
-        ul, ol, li { list-style:none; font-style: bold;}
-   
-        ul.myMenu {color: var(--maincolor); cursor:pointer;}
-        ul.myMenu > li { display:inline-block; width: 150px; padding: 0;  position:relative; }
-        
-        ul.myMenu > li ul.submenu { display: none; position:absolute; background-color: transparent;}
-        ul.myMenu > li:hover ul.submenu{display: block; }
-        ul.myMenu > li ul.submenu > li { display:inline-block; width:150px;  background:transparent;}
-        ul.myMenu > li ul.submenu > li:hover {color: rgb(163, 163, 163); }
-
-        .barButton {  
-            font-family: "YF"; 
-            border: 0;
-            background-color: transparent;
-            color: var(--maincolor);
-            font-size : large;
-            width: 150px;
-        }
-
-        .barButton:hover{
-            text-decoration: underline;
-        }
-
-        .rightTitle {
-            color: var(--maincolor);
-            font-size:230%;
-            text-align:start;
-            margin-left: 40px;
-        }
-
-        .rightSection {
-            color: var(--maincolor);
-            text-align: start;
-            margin-left: 40px;        
+            color: rgb(163, 163, 163);     
         }
 
     </style>
@@ -115,47 +29,47 @@
     
     <div><!---page1 --->
        
-        <div> <!---¹Ù ¸Ş´º div-->
+        <div> <!---ë°” ë©”ë‰´ div-->
 
             <ul class="myMenu">
-            <button class ="barMainButton" type="button" onclick="goTo(0)">¼­½Â·Î±×,</button>
+            <button class ="barMainButton" type="button" onclick="goTo(0)">ì„œìŠ¹ë¡œê·¸,</button>
             
              <li class="menu1">
-                <button class ="barButton" type="button"  >¼­½Â±Ç</button>
+                <button class ="barButton" type="button"  >ì„œìŠ¹ê¶Œ</button>
                 <ul class="menu1_s submenu">
-                    <li onclick="goTo(1)">¼­½Â±ÇÀÌ¶õ?</li>
+                    <li onclick="goTo(1)">ì„œìŠ¹ê¶Œì´ë€?</li>
                 </ul>
             </li>
             
             <li class="menu2">
-                <button class ="barButton" type="button"  >ÇĞ¾÷</button>
+                <button class ="barButton" type="button"  >í•™ì—…</button>
                 <ul class="menu2_s submenu">
-                    <li onclick="goTo(2)">ÀÌ¼ö °ú¸ñ</li>
-                    <li onclick="goTo(3)">ÇÁ·ÎÁ§Æ® ¹× °á°ú¹°</li>
+                    <li onclick="goTo(2)">ì´ìˆ˜ ê³¼ëª©</li>
+                    <li onclick="goTo(3)">í”„ë¡œì íŠ¸ ë° ê²°ê³¼ë¬¼</li>
                 </ul>
             </li>
             
 
             <li class="menu3">
-                <button class ="barButton" type="button">ÇĞ»ıÀÚÄ¡±â±¸È°µ¿</button>
+                <button class ="barButton" type="button">í•™ìƒìì¹˜ê¸°êµ¬í™œë™</button>
                 <ul class="menu3_s submenu">
                     <li onclick="goTo(4)">H-all</li>
                     <li onclick="goTo(5)">A:ble</li>
                     <li onclick="goTo(6)">Defy</li>
-                    <li onclick="goTo(7)">±×,_¸²</li>
+                    <li onclick="goTo(7)">ê·¸,_ë¦¼</li>
                 </ul>
             </li>
             
 
             <li class="menu4">
-                <button class ="barButton" type="button">°³¹ßÀÏÁö</button>
+                <button class ="barButton" type="button">ê°œë°œì¼ì§€</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(8)">ºí·Î±× °³¹ßÀÏÁö</li>
+                    <li onclick="goTo(8)">ë¸”ë¡œê·¸ ê°œë°œì¼ì§€</li>
                 </ul>
             </li>
             </ul>
 
-        </div><!---¹Ù ¸Ş´º div-->
+        </div><!---ë°” ë©”ë‰´ div-->
 
         <br><br><br>
 
@@ -163,29 +77,29 @@
         <tr> 
             <td style="width: 400px;" >
         
-                <div><!---¿ŞÂÊ Å¸ÀÌÆ²,¸ŞÀÎ »çÁø-->
+                <div><!---ì™¼ìª½ íƒ€ì´í‹€,ë©”ì¸ ì‚¬ì§„-->
             
                     <div class="titleBody"> 
         
-                    °³¹ßÀÏÁö<br>
+                    ê°œë°œì¼ì§€<br>
            
                     </div>     
                     <br><br><br>      
-                    <img src="../pics/log.png" alt="¼­½Â±Ç ¸ŞÀÎ »çÁø" style="width: 340px; ; height: 340px" >
-                </div> <!--- ¿ŞÂÊ Å¸ÀÌÆ²,¸ŞÀÎ »çÁø-->
+                    <img src="../pics/log.png" alt="ì„œìŠ¹ê¶Œ ë©”ì¸ ì‚¬ì§„" style="width: 340px; ; height: 340px" >
+                </div> <!--- ì™¼ìª½ íƒ€ì´í‹€,ë©”ì¸ ì‚¬ì§„-->
         
             </td>
 
             <td>
 
                 <div class="rightTitle">
-                    <b>°³¹ßÀÏÁöÀÔ´Ï´Ù.<hr></b> 
+                    <b>ê°œë°œì¼ì§€ì…ë‹ˆë‹¤.<hr></b> 
                 </div>
                 
                 <br>
 
                 <div class="rightSection">
-                    ¾È³çÇÏ¼¼¿ä? ¿©±â¼­ ÀÔ·ÂÇÒ ³»¿ëµéÀ» ÀÔ·ÂÇØÁÖ¸é µË´Ï´Ù.
+                    ì•ˆë…•í•˜ì„¸ìš”? ì—¬ê¸°ì„œ ì…ë ¥í•  ë‚´ìš©ë“¤ì„ ì…ë ¥í•´ì£¼ë©´ ë©ë‹ˆë‹¤.
 
                     
                 </div>
