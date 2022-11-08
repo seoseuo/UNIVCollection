@@ -1,14 +1,199 @@
 <!DOCTYPE html>
 
-<head>
+<head>  
+    <meta charset="EUC-KR">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    
     <script src="./move.js">
 
     </script>
+    
+    <style>
+        @font-face {
+            font-family: "YF";
+            src: url("./210\ Yeonggot\ Regular.ttf") format("opentype");
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        :root {
+            --maincolor : #ae1e1e ;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
+
+
+
+        td,tr {
+
+            text-align: left;
+            vertical-align: top;
+        }
+
+
+        hr {
+            background: var(--maincolor);
+            height: 1px;
+        }
+
+
+        body {
+            
+            background-color: rgb(255, 230, 230);  
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+    
+        }
+
+        .titleBody {
+            font-family: "YF";
+            color: var(--maincolor);
+
+            font-size : 350%;  
+
+            text-align: right;
+            margin-right: 100px;
+        }
+
+        .barMainButton {
+            font-family: "YF";
+            border: 0;
+            background-color: transparent;
+            color: var(--maincolor);
+            font-size: 220%;
+            margin-left: 110px;
+        }
+
+        .barMainButton:hover {
+            cursor: pointer;
+            color: rgb(163, 163, 163);
+        }
+
+        ul, ol, li { list-style:none; font-style: bold;}
+   
+        ul.myMenu {color: var(--maincolor); cursor:pointer;}
+        ul.myMenu > li { display:inline-block; width: 150px; padding: 0;  position:relative; }
+        
+        ul.myMenu > li ul.submenu { display: none; position:absolute; background-color: transparent;}
+        ul.myMenu > li:hover ul.submenu{display: block; }
+        ul.myMenu > li ul.submenu > li { display:inline-block; width:150px;  background:transparent;}
+        ul.myMenu > li ul.submenu > li:hover {color: rgb(163, 163, 163); }
+
+        .barButton {  
+            font-family: "YF"; 
+            border: 0;
+            background-color: transparent;
+            color: var(--maincolor);
+            font-size : large;
+            width: 150px;
+        }
+
+        .barButton:hover{
+            text-decoration: underline;
+        }
+
+        .rightTitle {
+            color: var(--maincolor);
+            font-size:230%;
+            text-align:start;
+            margin-left: 40px;
+        }
+
+        .rightSection {
+            color: var(--maincolor);
+            text-align: start;
+            margin-left: 40px;        
+        }
+
+    </style>
 </head>
 <body>
-    <button class ="barMainButton" type="button" onclick="goTo(0)">�꽌�듅濡쒓렇,</button>
+    <br><br><br>
+    
+    <div><!---page1 --->
+       
+        <div> <!---바 메뉴 div-->
+
+            <ul class="myMenu">
+            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
+            
+             <li class="menu1">
+                <button class ="barButton" type="button"  >서승권</button>
+                <ul class="menu1_s submenu">
+                    <li onclick="goTo(1)">서승권이란?</li>
+                </ul>
+            </li>
+            
+            <li class="menu2">
+                <button class ="barButton" type="button"  >학업</button>
+                <ul class="menu2_s submenu">
+                    <li onclick="goTo(2)">이수 과목</li>
+                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu3">
+                <button class ="barButton" type="button">학생자치기구활동</button>
+                <ul class="menu3_s submenu">
+                    <li onclick="goTo(4)">H-all</li>
+                    <li onclick="goTo(5)">A:ble</li>
+                    <li onclick="goTo(6)">Defy</li>
+                    <li onclick="goTo(7)">그,_림</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu4">
+                <button class ="barButton" type="button">개발일지</button>
+                <ul class="menu3_s submenu">
+                    <li onclick="goTo(8)">블로그 개발일지</li>
+                </ul>
+            </li>
+            </ul>
+
+        </div><!---바 메뉴 div-->
+
+        <br><br><br>
+
+        <table style="width: 900px ;"> 
+        <tr> 
+            <td style="width: 400px;" >
+        
+                <div><!---왼쪽 타이틀,메인 사진-->
+            
+                    <div class="titleBody"> 
+        
+                    제 37대<br><span style="font-size: 40px;">총학생회 선거캠프</span><br>H-all
+           
+                    </div>     
+                    <br><br><br>      
+                    <img src="../pics/ABLE.png" alt="서승권 메인 사진" style="width: 340px; ; height: 340px" >
+                </div> <!--- 왼쪽 타이틀,메인 사진-->
+        
+            </td>
+
+            <td>
+
+                <div class="rightTitle">
+                    <b>모두를 위한<br>한림을 위한<hr></b> 
+                </div>
+                
+                <br>
+
+                <div class="rightSection">
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+
+                    
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    </div><!---page1 --->
 </body>
 </html>
