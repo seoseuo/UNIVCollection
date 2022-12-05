@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>¼­½ÂÀÏº¸</title>
-    <style>
 
+<head>
+    <title>ì„œìŠ¹ì¼ë³´</title>
+    <style>
         h1 {
             width: 1200px;
             font-size: 40px;
         }
 
-        hr{
+        hr {
             height: 3px;
             background-color: black;
         }
-        #backG{
+
+        #backG {
             background-image: url("src/backgroundPic.PNG");
             width: 1200px;
             height: 900px;
             padding: 20px;
             box-shadow: 3px 3px 3px 3px gray;
         }
+
         body {
-            -webkit-user-select:none;
-            -moz-user-select:none;
-            -ms-user-select:none;
-            user-select:none
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
         }
 
-        td{
+        td {
             padding: 10px;
         }
 
-        #we{
+        #we {
             font-size: 30px;
             font-weight: bold;
         }
 
         .weimg {
-            width: 150px; 
+            width: 150px;
             height: 100px
         }
 
         button {
             cursor: pointer;
         }
+
         button:hover {
-            color:brown;
+            color: rgb(255, 2, 2);
         }
 
         #moveBtn {
@@ -53,7 +56,7 @@
             border: 0;
         }
 
-        #borDer{
+        #borDer {
             border: 1px black solid;
         }
 
@@ -62,229 +65,247 @@
             font-size: larger;
         }
 
-        a { 
-            color: rgb(0, 0, 0); 
+        a {
+            cursor: pointer;
+            color: rgb(0, 0, 0);
             text-decoration-line: none;
         }
-        a:visited { 
-            color: rgb(0, 0, 0); 
-        }
-        a:hover { 
-            color: rgb(0, 30, 255); 
-        }
-        a:active { 
-            color: rgb(255, 0, 0); 
+
+        a:visited {
+            color: rgb(0, 0, 0);
         }
 
+        a:hover {
+            color: rgb(0, 30, 255);
+        }
 
+        a:active {
+            color: rgb(255, 0, 0);
+        }
     </style>
 
     <script>
-        var files = ["src/we1.PNG", 
-        "src/we2.PNG",
-        "src/we3.PNG",
-        "src/we4.PNG",
-        "src/we5.PNG",
-        "src/we6.PNG",
-        "src/we7.PNG",
-        "src/we8.PNG"
+        var files = ["src/we1.PNG",
+            "src/we2.PNG",
+            "src/we3.PNG",
+            "src/we4.PNG",
+            "src/we5.PNG",
+            "src/we6.PNG",
+            "src/we7.PNG",
+            "src/we8.PNG"
         ];
 
         var sections = [
-        "¿ôÀ½¼Ò¸®°¡ °¡µæÇÑ, ºê¶óÁúÀü Áñ±æ ÁØºñµÈ ÇÑ±¹ ¼±¼öµé ÈÆ·Ã",
-        "À×±Û·£µå Ä«Å¸¸£ ¿ùµåÄÅ Àü°æ±â °ñ¸ğÀ½ ÇÑ°æ±â 6°ñ ±â·ÏÇØ..",
-        "´ëÇÑ¹Î±¹, ¿ì¸®°¡ Æ÷¸£Åõ°¥ ²ª°í 16°­ ÁøÃâ, ±âÀûÀº ÀÏ¾î³ª³ª",
-        "ÇÁ¶û½º Ä«Å¸¸£ ¿ùµåÄÅ Àü°æ±â °ñ¸ğÀ½ ¿Ã¸®ºñ¿¡ Áö·ç ºÎÈ°..!",
-        "'ÀÌÀû¼³ ÆÑÆ®Ã¼Å©' Á¶±Ô¼º ¹ÙÀÌ¾Æ¿ô Á¸Àç À¯¹«´Â? °ú¿¬ ¾îµğ?",
-        "Æú¶õµå Ä«Å¸¸£ ¿ùµåÄÅ Àü°æ±â °ñ¸ğÀ½ ¹Ù¸£»şÀÇ ·¹¹İµµÇÁ½ºÅ° ",
-        "À½¹ÙÆä¿Í Çò°¥¸± Á¤µµÀÇ ¼Óµµ! ¿ª½À ¿Ï¼ºÇÏ´Â ÇÏÅ°¹Ì",
-        "¡®ÆÄ³ÙÄ« ¼º°ø¡¯ ¿ùµåÄÅ ¸í´Ü Å»¶ôÀÇ ¾Æ½¬¿ò ´Ş·¡´Â º¥ ¿¹µ¥¸£",
+            "ì›ƒìŒì†Œë¦¬ê°€ ê°€ë“í•œ, ë¸Œë¼ì§ˆì „ ì¦ê¸¸ ì¤€ë¹„ëœ í•œêµ­ ì„ ìˆ˜ë“¤ í›ˆë ¨",
+            "ì‰ê¸€ëœë“œ ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì „ê²½ê¸° ê³¨ëª¨ìŒ í•œê²½ê¸° 6ê³¨ ê¸°ë¡í•´..",
+            "ëŒ€í•œë¯¼êµ­, ìš°ë¦¬ê°€ í¬ë¥´íˆ¬ê°ˆ êº¾ê³  16ê°• ì§„ì¶œ, ê¸°ì ì€ ì¼ì–´ë‚˜ë‚˜",
+            "í”„ë‘ìŠ¤ ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì „ê²½ê¸° ê³¨ëª¨ìŒ ì˜¬ë¦¬ë¹„ì— ì§€ë£¨ ë¶€í™œ..!",
+            "'ì´ì ì„¤ íŒ©íŠ¸ì²´í¬' ì¡°ê·œì„± ë°”ì´ì•„ì›ƒ ì¡´ì¬ ìœ ë¬´ëŠ”? ê³¼ì—° ì–´ë””?",
+            "í´ë€ë“œ ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì „ê²½ê¸° ê³¨ëª¨ìŒ ë°”ë¥´ìƒ¤ì˜ ë ˆë°˜ë„í”„ìŠ¤í‚¤ ",
+            "ìŒë°”í˜ì™€ í—·ê°ˆë¦´ ì •ë„ì˜ ì†ë„! ì—­ìŠµ ì™„ì„±í•˜ëŠ” í•˜í‚¤ë¯¸",
+            "â€˜íŒŒë„¨ì¹´ ì„±ê³µâ€™ ì›”ë“œì»µ ëª…ë‹¨ íƒˆë½ì˜ ì•„ì‰¬ì›€ ë‹¬ë˜ëŠ” ë²¤ ì˜ˆë°ë¥´",
         ];
 
-        var imgs = new Array();     
+        var imgs = new Array();
 
-        for(var i=0; i<files.length; i++) {
-	        imgs[i] = new Image(); // ÀÌ¹ÌÁö °´Ã¼ »ı¼º
-	        imgs[i].src = files[i]; // ÀÌ¹ÌÁö ·Îµù
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image(); // ì´ë¯¸ì§€ ê°ì²´ ìƒì„±
+            imgs[i].src = files[i]; // ì´ë¯¸ì§€ ë¡œë”©
         }
-        
-        var a=0;
-        var b=1;
-        var c=2;
-        var d=3;
+
+        var a = 0;
+        var b = 1;
+        var c = 2;
+        var d = 3;
 
 
         function move(x) {
 
-            if(x==0) {
-                a--;
-                if(a<=-1) a=7;
+            if (x == 0) {
+                a -= 4;
+                if (a <= -1) a = 7;
 
-                b--;
-                if(b<=-1) b=7;
-                
-                c--;
-                if(c<=-1) c=7;
+                b -= 4;
+                if (b <= -1) b = 6;
 
-                d--;
-                if(d<=-1) d=7;
+                c -= 4;
+                if (c <= -1) c = 5;
 
-                document.getElementById("p1").src=imgs[a].src;
-                document.getElementById("p2").src=imgs[b].src;
-                document.getElementById("p3").src=imgs[c].src;
-                document.getElementById("p4").src=imgs[d].src;
+                d -= 4;
+                if (d <= -1) d = 4;
 
-                document.getElementById("section1").innerText=sections[a];
-                document.getElementById("section2").innerText=sections[b];
-                document.getElementById("section3").innerText=sections[c];
-                document.getElementById("section4").innerText=sections[d];
+                document.getElementById("p1").src = imgs[a].src;
+                document.getElementById("p2").src = imgs[b].src;
+                document.getElementById("p3").src = imgs[c].src;
+                document.getElementById("p4").src = imgs[d].src;
+
+                document.getElementById("section1").innerText = sections[a];
+                document.getElementById("section2").innerText = sections[b];
+                document.getElementById("section3").innerText = sections[c];
+                document.getElementById("section4").innerText = sections[d];
 
 
             }
 
-            if(x==1) {
-                
-                ++a;
-                ++b;
-                ++c;
-                ++d;
+            if (x == 1) {
 
-                if(a>=8) a=0;
-                if(b>=8) b=0;
-                if(c>=8) c=0;
-                if(d>=8) d=0;
+                a += 4;
+                b += 4;
+                c += 4;
+                d += 4;
 
-                document.getElementById("p1").src=imgs[a].src;
-                document.getElementById("p2").src=imgs[b].src;
-                document.getElementById("p3").src=imgs[c].src;
-                document.getElementById("p4").src=imgs[d].src;
+                if (a >= 8) a = 0;
+                if (b >= 8) b = 1;
+                if (c >= 8) c = 2;
+                if (d >= 8) d = 3;
 
-                document.getElementById("section1").innerText=sections[a];
-                document.getElementById("section2").innerText=sections[b];
-                document.getElementById("section3").innerText=sections[c];
-                document.getElementById("section4").innerText=sections[d];
+                document.getElementById("p1").src = imgs[a].src;
+                document.getElementById("p2").src = imgs[b].src;
+                document.getElementById("p3").src = imgs[c].src;
+                document.getElementById("p4").src = imgs[d].src;
 
+                document.getElementById("section1").innerText = sections[a];
+                document.getElementById("section2").innerText = sections[b];
+                document.getElementById("section3").innerText = sections[c];
+                document.getElementById("section4").innerText = sections[d];
 
-            }        
+            }
         }
 
-        var htmls = ["src/weIndex1.html","src/weIndex2.html","src/weIndex3.html","src/weIndex4.html",
-                    "src/weIndex5.html","src/weIndex6.html","src/weIndex7.html","src/weIndex8.html"];
+        var htmls = ["src/weIndex1.html", "src/weIndex2.html", "src/weIndex3.html", "src/weIndex4.html",
+            "src/weIndex5.html", "src/weIndex6.html", "src/weIndex7.html", "src/weIndex8.html"];
 
         function pop(x) {
-            window.open(htmls[x],"_blank","width=800px, height =500px");
+            if (a < 4) window.open(htmls[x], "_blank", "width=450px, height =800px");
+            else window.open(htmls[x + 4], "_blank", "width=450px, height =800px");
         }
 
     </script>
 </head>
+
 <body>
     <div id="backG">
-    <h1 style="text-align: center;">¼­½ÂÀÏº¸</h1><hr>
-    2022-12-04 È£
+        <h1 style="text-align: center;">ì„œìŠ¹ì¼ë³´</h1>
+        <hr>
+        2022-12-04 í˜¸
 
-    <div id="borDer">
-    <table style="width:1200px; height: 350px;">
-        <tr>
-            <td>
-                <div id="we">WE+ <span style="font-size: medium;">(Weekend Edition)</span></div>
+        <div id="borDer">
+            <table style="width:1200px; height: 350px;">
+                <tr>
+                    <td>
+                        <div id="we">WE+ <span style="font-size: medium;">(Weekend Edition)</span></div>
 
-                <table id="borDer">
-                    <tr style="height: 280px;">
-                        <td><button id="moveBtn" type="button" onclick="move(0)">¢¸</button></td>
-                        <td> 
-                            <table>
-                                <tr>
-                                    <td><img id="p1" class="weimg" src="src/we1.png" alt="WEÀÌ¹ÌÁö" onclick="pop(0)"></td>
-                                    <td><img id="p2" class="weimg" src="src/we2.png" alt="WEÀÌ¹ÌÁö" onclick="pop(1)"></td>
-                                    <td><img id="p3" class="weimg" src="src/we3.png" alt="WEÀÌ¹ÌÁö" onclick="pop(2)"></td>
-                                    <td><img id="p4" class="weimg" src="src/we4.png" alt="WEÀÌ¹ÌÁö" onclick="pop(3)">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><span id="section1" onclick="pop(0)">¿ôÀ½¼Ò¸®°¡ °¡µæÇÑ, ºê¶óÁúÀü Áñ±æ ÁØºñµÈ ÇÑ±¹ ¼±¼öµé ÈÆ·Ã</span></td>
-                                    <td><span id="section2">À×±Û·£µå Ä«Å¸¸£ ¿ùµåÄÅ Àü°æ±â °ñ¸ğÀ½ ÇÑ°æ±â 6°ñ ±â·ÏÇØ..</span></td>
-                                    <td><span id="section3">´ëÇÑ¹Î±¹, ¿ì¸®°¡ Æ÷¸£Åõ°¥ ²ª°í 16°­ ÁøÃâ, ±âÀûÀº ÀÏ¾î³ª³ª</span></td>
-                                    <td><span id="section4">ÇÁ¶û½º Ä«Å¸¸£ ¿ùµåÄÅ Àü°æ±â °ñ¸ğÀ½ ¿Ã¸®ºñ¿¡ Áö·ç ºÎÈ°..!</span></td>
-                                </tr>
-                            </table>
+                        <table id="borDer">
+                            <tr style="height: 280px;">
+                                <td><button id="moveBtn" type="button" onclick="move(0)">â—€</button></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td><a><img id="p1" class="weimg" src="src/we1.png" alt="WEì´ë¯¸ì§€"
+                                                        onclick="pop(0)"></a></td>
+                                            <td><a><img id="p2" class="weimg" src="src/we2.png" alt="WEì´ë¯¸ì§€"
+                                                        onclick="pop(1)"></a></td>
+                                            <td><a><img id="p3" class="weimg" src="src/we3.png" alt="WEì´ë¯¸ì§€"
+                                                        onclick="pop(2)"></a></td>
+                                            <td><a><img id="p4" class="weimg" src="src/we4.png" alt="WEì´ë¯¸ì§€"
+                                                        onclick="pop(3)"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a onclick="pop(0)"><span id="section1" onclick="pop(0)">ì›ƒìŒì†Œë¦¬ê°€ ê°€ë“í•œ, ë¸Œë¼ì§ˆì „
+                                                        ì¦ê¸¸ ì¤€ë¹„ëœ í•œêµ­ ì„ ìˆ˜ë“¤ í›ˆë ¨</span></a></td>
+                                            <td><a onclick="pop(1)"><span id="section2">ì‰ê¸€ëœë“œ ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì „ê²½ê¸° ê³¨ëª¨ìŒ í•œê²½ê¸° 6ê³¨
+                                                        ê¸°ë¡í•´..</span></a></td>
+                                            <td><a onclick="pop(2)"><span id="section3">ëŒ€í•œë¯¼êµ­, ìš°ë¦¬ê°€ í¬ë¥´íˆ¬ê°ˆ êº¾ê³  16ê°• ì§„ì¶œ, ê¸°ì ì€
+                                                        ì¼ì–´ë‚˜ë‚˜</span></a></td>
+                                            <td><a onclick="pop(3)"><span id="section4">í”„ë‘ìŠ¤ ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì „ê²½ê¸° ê³¨ëª¨ìŒ ì˜¬ë¦¬ë¹„ì— ì§€ë£¨
+                                                        ë¶€í™œ..!</span></a></td>
+                                        </tr>
+                                    </table>
 
-                        </td>
-                        <td><button id="moveBtn" type="button" onclick="move(1)">¢º</button></td>
-                        
-                    </tr>
-                </table>
-                
-            </td>
+                                </td>
+                                <td><button id="moveBtn" type="button" onclick="move(1)">â–¶</button></td>
 
-            <td style="width: 400px;">
-                ´Ş·ÂºÎºĞ
-            </td>
-        </tr>
-    </table>
+                            </tr>
+                        </table>
 
-    <table style="width:1200px; height: 420px;">
-        <tr>
-            <td style="width: 400px;">
-                <iframe width="400px" 
-                        height="350px" 
-                        src="https://www.youtube.com/embed/tqBGPf8kRX8" 
-                        title="¼­½ÂÀÏº¸ ÀÚ·á¿µ»ó" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                    
-            </td>
-            <td>
-                <div id="we">°¡Àå ¸¹ÀÌ º» ´º½º</div><br>
-                <div style="font-size: large;">
-                    <span id="num">1. </span>´ëÇÑ¹Î±¹ 16°­ ÁøÃâ, ²ŞÀÎ°¡ »ı½ÃÀÎ°¡..<br>&nbsp&nbsp&nbsp&nbsp12³â¸¸¿¡ 16°­ ÁøÃâ 4°­ ½ÅÈ­ ´Ù½Ã ¾²<br>
-                    <span id="num">2. </span>µ¶ÀÏ 16°­ ÁøÃâ ½ÇÆĞ, µ¶ÀÏ ²ªÀº ÀÏº» <br>&nbsp&nbsp&nbsp&nbsp16°­ ÁøÃâ, ÀÏº»¿¡°Ô ÀÌº¯ ÀÖÀ»°Ç°¡?<br>
-                    <span id="num">3. </span>¿å¼³, ±×¸®°í ÆÈ²ŞÄ¡ »ç¿ë±îÁö¡¦'Å»¶ô' <br>&nbsp&nbsp&nbsp&nbsp¿ì·ç°úÀÌ ¼öºñ¼ö, FIFA Â¡°è À¯·ÂÇÏ´Ù.<br>
-                    <span id="num">4. </span>16°­Àü ºê¶óÁú°ú ¸ÂºÙ¾î, FIFA·©Å· 1À§<br>&nbsp&nbsp&nbsp&nbsp ÃÊ°­ÆÀ ºê¶óÁúÀ» ²ªÀ» ¼ö ÀÖÀ»°ÍÀÎ°¡?<br>
-                    <span id="num">5. </span>¼ÕÈï¹Î Æ÷·çÅõ°¥Àü, ¼öºñ¼ö °¡¶ûÀÌ»çÀÌ &nbsp&nbsp&nbsp&nbspÀı¹¦ÇÑ ÆĞ½º·Î ¾î½Ã½ºÆ®¸¦ ±â·ÏÇØ
-                </div>
-                <br>
-                <div><button type="button">+ ´õ º¸±â</button></div>
-            </td>
+                    </td>
 
-            <td>
-                <div id="we">Ä«Å¸¸£ ¿ùµåÄÅ ÀÌ½´</div><hr style="height: 1px;">
+                    <td style="width: 400px;">
+                        ë‹¬ë ¥ë¶€ë¶„
+                    </td>
+                </tr>
+            </table>
 
-                <table>
-                    <tr>
-                        <td>
-                            <a href="src/bindex1.html"><img src="src/wc1.png" style="width: 100px; height: 80px"></a>
-                        </td>
-                        <td>
-                            <a href="src/bindex1.html">ÈÄ¹İÀüÀÇ ½ÂºÎ»ç! ÀÏº»!</a> 
-                        </td>
-                    </tr>
+            <table style="width:1200px; height: 420px;">
+                <tr>
+                    <td style="width: 400px;">
+                        <iframe width="400px" height="350px" src="https://www.youtube.com/embed/tqBGPf8kRX8"
+                            title="ì„œìŠ¹ì¼ë³´ ìë£Œì˜ìƒ"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
 
-                    <tr>
-                        <td>
-                            <a href="src/bindex2.html"><img src="src/wc2.png" style="width: 100px; height: 80px"></a>
-                        </td>
-                        <td>
-                            <a href="src/bindex2.html">[ÄÚ½ºÅ¸¸®Ä«-µ¶ÀÏ] µÚ´ÊÀº °ñÆøÇ³, µ¶ÀÏ ¾Æ½¬¿î ½Â¸®</a>
-                        </td>
-                    </tr>
+                    </td>
+                    <td>
+                        <div id="we">ê°€ì¥ ë§ì´ ë³¸ ë‰´ìŠ¤</div><br>
+                        <div style="font-size: large;">
+                            <span id="num">1. </span>ëŒ€í•œë¯¼êµ­ 16ê°• ì§„ì¶œ, ê¿ˆì¸ê°€ ìƒì‹œì¸ê°€..<br>&nbsp&nbsp&nbsp&nbsp12ë…„ë§Œì— 16ê°• ì§„ì¶œ 4ê°• ì‹ í™”
+                            ë‹¤ì‹œ ì“°<br>
+                            <span id="num">2. </span>ë…ì¼ 16ê°• ì§„ì¶œ ì‹¤íŒ¨, ë…ì¼ êº¾ì€ ì¼ë³¸ <br>&nbsp&nbsp&nbsp&nbsp16ê°• ì§„ì¶œ, ì¼ë³¸ì—ê²Œ ì´ë³€
+                            ìˆì„ê±´ê°€?<br>
+                            <span id="num">3. </span>ìš•ì„¤, ê·¸ë¦¬ê³  íŒ”ê¿ˆì¹˜ ì‚¬ìš©ê¹Œì§€â€¦'íƒˆë½' <br>&nbsp&nbsp&nbsp&nbspìš°ë£¨ê³¼ì´ ìˆ˜ë¹„ìˆ˜, FIFA ì§•ê³„
+                            ìœ ë ¥í•˜ë‹¤.<br>
+                            <span id="num">4. </span>16ê°•ì „ ë¸Œë¼ì§ˆê³¼ ë§ë¶™ì–´, FIFAë­í‚¹ 1ìœ„<br>&nbsp&nbsp&nbsp&nbsp ì´ˆê°•íŒ€ ë¸Œë¼ì§ˆì„ êº¾ì„ ìˆ˜
+                            ìˆì„ê²ƒì¸ê°€?<br>
+                            <span id="num">5. </span>ì†í¥ë¯¼ í¬ë£¨íˆ¬ê°ˆì „, ìˆ˜ë¹„ìˆ˜ ê°€ë‘ì´ì‚¬ì´ &nbsp&nbsp&nbsp&nbspì ˆë¬˜í•œ íŒ¨ìŠ¤ë¡œ ì–´ì‹œìŠ¤íŠ¸ë¥¼ ê¸°ë¡í•´
+                        </div>
+                        <br>
+                        <div><button type="button">+ ë” ë³´ê¸°</button></div>
+                    </td>
 
-                    <tr>
-                        <td>
-                            <a href="src/bindex3.html"><img src="src/wc3.png" style="width: 100px; height: 80px"></a>
-                        </td>
-                        <td>
-                            <a href="src/bindex3.html">[Å©·Î¾ÆÆ¼¾Æ-º§±â¿¡] ·çÄ«Äí È£·¯¼î 4¹ø¿¡ ÁıÀ¸·Î</a>
-                        </td>
-                    </tr>
-                    
-                </table>
+                    <td>
+                        <div id="we">ì¹´íƒ€ë¥´ ì›”ë“œì»µ ì´ìŠˆ</div>
+                        <hr style="height: 1px;">
 
-            </td>
-        </tr>
-    </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="src/bindex1.html"><img src="src/wc1.png"
+                                            style="width: 100px; height: 80px"></a>
+                                </td>
+                                <td>
+                                    <a href="src/bindex1.html">í›„ë°˜ì „ì˜ ìŠ¹ë¶€ì‚¬! ì¼ë³¸!</a>
+                                </td>
+                            </tr>
 
-    </div>
+                            <tr>
+                                <td>
+                                    <a href="src/bindex2.html"><img src="src/wc2.png"
+                                            style="width: 100px; height: 80px"></a>
+                                </td>
+                                <td>
+                                    <a href="src/bindex2.html">[ì½”ìŠ¤íƒ€ë¦¬ì¹´-ë…ì¼] ë’¤ëŠ¦ì€ ê³¨í­í’, ë…ì¼ ì•„ì‰¬ìš´ ìŠ¹ë¦¬</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="src/bindex3.html"><img src="src/wc3.png"
+                                            style="width: 100px; height: 80px"></a>
+                                </td>
+                                <td>
+                                    <a href="src/bindex3.html">[í¬ë¡œì•„í‹°ì•„-ë²¨ê¸°ì—] ë£¨ì¹´ì¿  í˜¸ëŸ¬ì‡¼ 4ë²ˆì— ì§‘ìœ¼ë¡œ</a>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 </body>
+
 </html>
