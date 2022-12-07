@@ -82,6 +82,33 @@
         a:active {
             color: rgb(255, 0, 0);
         }
+
+        #calendar {
+            border: 1px white solid;
+        } 
+
+        #week {
+            color: white;
+            background-color: rgb(171, 171, 224);
+        }
+
+        #days {
+            background-color: rgb(218, 218, 218);
+        }
+
+        #today {
+            background-color: rgb(254, 190, 93);
+        }
+
+        #sunday {
+            color: red;
+        }
+
+        #saturday {
+            color:rgb(0, 30, 255)
+        }
+
+
     </style>
 
     <script>
@@ -180,6 +207,10 @@
             else window.open(htmls[x + 4], "_blank", "width=450px, height =800px");
         }
 
+        function more() {
+            location.href = "src/mostIndex.html";
+        }
+
     </script>
 </head>
 
@@ -231,7 +262,24 @@
                     </td>
 
                     <td style="width: 400px;">
-                        달력부분
+                        <div style="border: 1px rgb(177, 177, 177) solid; width : 330px; height : 320px; background-color : white;">
+                            <div id="num" style="background-color: rgb(208, 208, 208);">날짜별 지면 보기</div>
+                            <div style="background-color: white; text-align :center">
+                                <button type="button">◀</button>
+                                <input type="month" value="2022-12">
+                                <button type="button">▶</button>
+                            </div>
+                            <table id="calendar" style="margin: auto; width: 330px; text-align:center;">
+
+                                <tr id="week"> <td>일</td> <td>월</td> <td>화</td> <td>수</td> <td>목</td> <td>금</td> <td>토</td></tr></div>
+                                <tr id="days"> <td id="sunday">-</td> <td>-</td> <td>-</td> <td>-</td> <td>1</td> <td>2</td> <td id="saturday">3</td> </tr>
+                                <tr id="days"> <td id="sunday">4</td> <td id="today">5</td> <td>6</td> <td>7</td> <td>8</td> <td>9</td> <td id="saturday">10</td> </tr>
+                                <tr id="days"> <td id="sunday">11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td> <td>16</td> <td id="saturday">17</td> </tr>
+                                <tr id="days"> <td id="sunday">18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td> <td>23</td> <td id="saturday">24</td> </tr>
+                                <tr id="days"> <td id="sunday">25</td> <td>26</td> <td>27</td> <td>28</td> <td>29</td> <td>30</td> <td id="saturday">31</td> </tr>
+
+                            </table>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -260,7 +308,7 @@
                             <span id="num">5. </span>손흥민 포루투갈전, 수비수 가랑이사이 &nbsp&nbsp&nbsp&nbsp절묘한 패스로 어시스트를 기록해
                         </div>
                         <br>
-                        <div><button type="button">+ 더 보기</button></div>
+                        <div><button type="button" onclick="more()">+ 더 보기</button></div>
                     </td>
 
                     <td>
