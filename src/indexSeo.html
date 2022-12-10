@@ -28,7 +28,77 @@
             color: rgb(163, 163, 163);      
         }
 
+
     </style>
+
+    <script>
+        
+        var files = ["../pics/seo2.png",
+                    "../pics/seo3.png",
+                    "../pics/seo4.png",
+                    "../pics/seo5.png",
+                    "../pics/seo6.png"];
+        
+        var texts = ["<dt><h3><i>인적사항</i> 🧐</h3></dt> <dd><b>이름 :</b> 서승권<br></dd><dd><b>생년월일 :</b> 1999.09.20<br></dd><dd><b>소속 :</b> 한림대학교 정보과학대학 소프트웨어융합학부<br></dd> <dd><b>전공 :</b> (주) 스마트 Iot , (부) 빅데이터<br></dd><dd><b>E-mail :</b> <img src='../pics/email.png' style='width: 15px; height: 10px;'> seoseuo@naver.com<br></dd> <dd><b>Insta :</b> <a href='https://www.instagram.com/seuio__/'><img src='../pics/insta.png' style='width: 15px; height: 15px;'></a> @seuio__<br></dd> <dd><b>GitHub :</b> <a href='https://github.com/seoseuo'><img src='../pics/git.png' style='width: 15px; height: 15px;'></a> @seoseuo</dd><dt><h3><i>TECHSTACK</i> 💻</h3></dt> <dd> <img src='https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white'>   <img src='https://img.shields.io/badge/C-A8B9CC?style=flat&logo=C&logoColor=white'><img src='https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white'>   <img src='https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white'> <img src='https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white'><img src='https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white'> </dd><dd>    <img src='https://img.shields.io/badge/kotlin-7F52FF?style=flat&logo=kotlin&logoColor=black'><img src='https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white'> <img src='https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white'> <img src='https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black'> <img src='https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white'></dd><br>",
+                    "<dt><h3><i>총 이력</i> 📃</h3></dt><dd><b>2018 1-1</b></dd><br> <dd>- 한림대학교 [IT계열] 입학</dd><dd>- 과 학술동아리 [멀티플렉스] 부원</dd><dd>- 과 축구동아리 [DEFY] 기장</dd> <dd>- 중앙 배구동아리 [SKY] 부원</dd><dd>- 공과대학 체육대회 [DEFY B팀] 선수 축구경기 출전</dd><br><dd><b>2018 1-2</b></dd><br><dd>- 한림대학교X강원대학교 [한강전] 배구선수 출전</dd><dd>- 교내 자체 리그 [인트라뮤랄리그] DEFY 축구선수</dd><br><dd><b>2019 2-1</b></dd><br><dd>- 전공선택 [(주)스마트IOT , (부) 빅데이터]</dd><dd>- 소프트웨어융합대학 체육대회 [DEFY] 선수 축구경기</dd><br>",
+                    "<h3><i>총 이력</i> 📃</h3><dd><b>2019</b></dd><br><dd>- 입대휴학</dd><dd>- 제 5 보병사단 신병교육대 입소</dd><br><dd><b>2021</b></dd><br><dd>- 제 8 기동사단 공병대대 통신병 병장 만기전역</dd><dd>- 복학</dd> <br><dd><b>2021 2-2</b></dd><br> <dd>- 2022년도 총학생회후보 선거본부 [H-all] 선거운동원</dd><dd>- 학기우등 [4.32]</dd><br><br><br><br>",
+                    "<h3><i>총 이력</i> 📃</h3></dd> <dd><b>2022 3-1</b></dd><br><dd>- 정보과학대학 학생자치기구 [A:BLE] 체육부장</dd><dd>- 과 축구동아리 [DEFY] 부회장</dd><dd>- 과 축구동아리 [일레븐] 부원</dd> <dd>- 과 학술동아리 [노네임] 부원</dd><dd>- 학술동아리 [노네임] 자바프로그래밍I 멘토링 진행</dd> <dd>- 학기우등 [4.3]</dd> <br><dd><b>2022 3-2</b></dd><br><dd>- 자바프로그래밍I 멘토링 진행</dd><dd>- 한림대학교 대동제 [그,_림] 무대팀원</dd><dd>- 2023년도 정과대학생회후보 선거본부 [SEASON]</dd> <br><br><dd><h3>2023년도도 열심히 달리는 중.</h3></dd>",
+                    "<dt><h3><i>자격증</i> 💳</h3></dt> <dd>- 2종 보통 운전면허</dd><dd>- MOS Word(Expert)</dd><dd>- MOS Excel(Expert)</dd><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"];
+
+        var imgs = new Array();     
+
+        for(var i=0; i<files.length; i++) {
+	        imgs[i] = new Image(); // 이미지 객체 생성
+	        imgs[i].src = files[i]; // 이미지 로딩
+            }
+             
+        var a=0;
+
+
+        function move(x) {
+            var p = document.getElementById("pic");
+            var t = document.getElementById("rt");
+            var s = document.getElementById("section");
+
+            if(x==0) {
+                a--;
+                
+                if(a<=-1) a=imgs.length-1;
+
+                p.src=imgs[a].src;    
+                t.innerHTML="서승권이란?";
+                s.innerHTML=texts[a];
+                if(a==0) {
+                    t.innerHTML="서승권이란?<br>제 소개를 <br>시작하겠습니다.";
+                }
+            }
+
+            if(x==1) {
+                a=0;
+                p.src=imgs[a].src; 
+                s.innerHTML=texts[a];   
+                t.innerHTML="서승권이란?<br>제 소개를 <br>시작하겠습니다.";
+            }
+
+            if(x==2) {
+                a++;
+                if(a>=imgs.length) a=0;
+                
+                p.src=imgs[a].src;
+                t.innerHTML="서승권이란?";
+                s.innerHTML=texts[a];
+
+                if(a==0) {
+                    t.innerHTML="서승권이란?<br>제 소개를 <br>시작하겠습니다.";
+                }
+            }        
+        }
+        
+
+    </script>
+
+
+
 </head>
 <body>
     <br><br><br>
@@ -90,7 +160,7 @@
                     저는,<br> 서승권&nbsp; <br>입니다.
                         
                     </div>          
-                    <img src="../pics/seo2.png" alt="서승권 메인 사진" style="width: 300px; ; height: 400px" >
+                    <img id="pic" src="../pics/seo2.png" alt="서승권 메인 사진" style="width: 300px; ; height: 400px" >
                 </div> <!--- 왼쪽 타이틀,메인 사진-->
         
             </td>
@@ -98,16 +168,57 @@
             <td>
 
                 <div class="rightTitle">
-                    <b>안녕하세요?<br>열심히하는 사람<br>서승권입니다.<hr></b> 
+                    <b id="rt">서승권이란?<br>
+                        제 소개를 <br>
+                        시작하겠습니다.</b><hr> 
                 </div>
                 
-                <br>
-
                 <div class="rightSection">
-                    이 웹 사이트는 제 대학생활을 그대로 담고 있는 블로그입니다.<br>
-                    블로그를 방문하신 내빈 여러분들께서는 상단에 위치한 메뉴<br>
-                    클릭하여 원하는 게시물을 정독하시면 되겠습니다.   
-                </div>
+                    
+                    <span id="section">
+                    
+                    <dt><h3><i>인적사항</i> 🧐</h3></dt>
+
+                    <dd><b>이름 :</b> 서승권<br></dd>
+                    <dd><b>생년월일 :</b> 1999.09.20<br></dd>
+                    <dd><b>소속 :</b> 한림대학교 정보과학대학 소프트웨어융합학부<br></dd> 
+                    <dd><b>전공 :</b> (주) 스마트 Iot , (부) 빅데이터<br></dd>
+                    <dd><b>E-mail :</b> <img src="../pics/email.png" style="width: 15px; height: 10px;"> seoseuo@naver.com<br></dd>
+                    <dd><b>Insta :</b> <a href="https://www.instagram.com/seuio__/"><img src="../pics/insta.png" style="width: 15px; height: 15px;"></a> @seuio__<br></dd> 
+                    <dd><b>GitHub :</b> <a href="https://github.com/seoseuo"><img src="../pics/git.png" style="width: 15px; height: 15px;"></a> @seoseuo</dd>
+                    
+                    
+                    <dt><h3><i>TECHSTACK</i> 💻</h3></dt>
+                    
+                    <dd>
+                    <img src="https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white">  
+                    <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=C&logoColor=white">
+                    <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">  
+                    <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white">  
+                    <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white">
+                    <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"> 
+                    </dd>
+                    
+                    <dd>    
+                    <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat&logo=kotlin&logoColor=black">
+                    <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"> 
+                    <img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white"> 
+                    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> 
+                    <img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white">
+                    </dd>
+
+                    <br>
+                    
+                    </span>
+
+                    <p style="text-align: right;">
+                    <button type="button" onclick="move(0)"><</button>
+                    <button type="button" onclick="move(1)">□</button>
+                    <button type="button" onclick="move(2)">></button>
+                    </p>
+
+                    
+
             </td>
         </tr>
 
