@@ -1,111 +1,338 @@
 <!DOCTYPE html>
 
-<head>  
+<head>
     <meta charset="UTF-8">
- 
+
     <title>서승권의 블로그에 오신 것을 환영합니다.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <script src="./move.js">
+    </script>
+
+    <script>
+
+        var a = 0;
+        var b = 1;
+        var c = 2;
+
+        var files = ["../pics/javalogo.png",
+            "../pics/sslogo.png",
+            "../pics/mysqllogo.png",
+
+            "../pics/opensourcelogo.png",
+            "../pics/computerlogo.png",
+            "../pics/clogo.png",
+
+            "../pics/oslogo.png",
+            "../pics/dslogo.png",
+            "../pics/programinglogo.png",
+
+            "../pics/algologo.png",
+            "../pics/weblogo.png",
+            "../pics/androidstudio.png",
+
+            "../pics/digitallogo.png",
+            "../pics/imbelogo.png",
+            "../pics/swlogo.png"
+        ];
+
+        var details = [
+            "이클립스를 통해 객체지향 프로그래밍인 자바 프로그래밍 기술을 터득합니다.",
+            "주파수와 주기, 오일러, 퓨리에 변환 등, 신호의 원리를 배웁니다.",
+            "MySql을 통한 데이터베이스 구축과 이론적 지식을 함께 배웁니다.",
+
+            "리눅스, 아파치, 텐서플로우 등의 오픈 소스를 실습하고, 깃과 깃허브를 사용합니다.",
+            "컴퓨터의 기초부터 공부를 시작하고 로직웍스와 어셈블리언어를 실습을 배웁니다.",
+            "vsCode를 이용하여 C언어를 공부하며 함수, 구조체, 공용체 등 기반을 터득합니다.",
+
+            "OS가 어떻게 동작하고 대해 공부하여 OS의 동작 원리를 이해합니다.",
+            "재귀함수, 배열, 리스트의 구조를 이해하고 이클립스를 통해 실습하였습니다.",
+            "언어의 유래를 공부하며, 언어들이 현재까지 어떻게 오게 되었는지 배웁니다.",
+
+            "리스트, 트리, 그래프, 힙을 이해하며 구현해내어 어떻게 동작하는지 이해합니다.",
+            "Html5,Css,JavaScript,Jquery를 통하여 직접 웹 사이트를 구축하며 이해합니다.",
+            "안드로이드 스튜디오를 통한 실습을 공부하며 직접 어플리케이션을 만듭니다.",
+
+            "신호들의 이론적 지식을 바탕으로 파이썬에 대입하여 결과물을 도출해냅니다.",
+            "라즈베리파이를 사용하여 여러 동작들을 만들어내고 프로젝트를 구상해냅니다.",
+            "실무자들을 초청해 취업에 대한 강의를 하며취업에 대한 지식을 얻어갑니다."
+        ];
+
+        var titles = [
+            "자바 프로그래밍",
+            "신호 및 시스템",
+            "데이터베이스 기초",
+
+            "오픈 소스 SW의 이해",
+            "컴퓨터 구조",
+            "C프로그래밍",
+
+            "운영체제",
+            "자료구조",
+            "프로그래밍 어론",
+
+            "알고리즘",
+            "웹 프로그래밍",
+            "모바일 프로그래밍",
+
+            "디지털 신호처리",
+            "임베디드 시스템",
+            "소프트웨어 특강"];
+
+        var imgs = new Array();
+
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image(); // 이미지 객체 생성
+            imgs[i].src = files[i]; // 이미지 로딩
+        }
+
+
+
+
+        function move(x) {
+
+
+            var i1 = document.getElementById("pic1");
+            var i2 = document.getElementById("pic2");
+            var i3 = document.getElementById("pic3");
+
+            var t1 = document.getElementById("title1");
+            var t2 = document.getElementById("title2");
+            var t3 = document.getElementById("title3");
+
+            var d1 = document.getElementById("detail1");
+            var d2 = document.getElementById("detail2");
+            var d3 = document.getElementById("detail3");
+
+
+            if (x == 0) { //후진이요
+
+                a -= 3;
+                b -= 3;
+                c -= 3;
+                if (a == -3 && b == -2 && c == -1) {
+                    a = 12;
+                    b = 13;
+                    c = 14;
+                }
+                i1.src = imgs[a].src;
+                i2.src = imgs[b].src;
+                i3.src = imgs[c].src;
+
+                t1.innerHTML = titles[a];
+                t2.innerHTML = titles[b];
+                t3.innerHTML = titles[c];
+
+                d1.innerHTML = details[a];
+                d2.innerHTML = details[b];
+                d3.innerHTML = details[c];
+
+            }
+
+
+
+            if (x == 2) { //전진하기
+
+                a += 3;
+                b += 3;
+                c += 3;
+                if (a == 15 && b == 16 && c == 17) {
+                    a = 0;
+                    b = 1;
+                    c = 2;
+                }
+                i1.src = imgs[a].src;
+                i2.src = imgs[b].src;
+                i3.src = imgs[c].src;
+
+                t1.innerHTML = titles[a];
+                t2.innerHTML = titles[b];
+                t3.innerHTML = titles[c];
+
+                d1.innerHTML = details[a];
+                d2.innerHTML = details[b];
+                d3.innerHTML = details[c];
+
+            }
+
+        }
+
+
 
     </script>
+
     <link href="main.css" type="text/css" rel="stylesheet">
     <style>
-
         :root {
-            --maincolor :  rgb(231, 202, 224);
+            --maincolor: rgb(231, 202, 224);
         }
+
         body {
-            background-color: #2d1d4b;  
+            background-color: #2d1d4b;
         }
+
         .barMainButton:hover {
             color: rgb(163, 163, 163);
         }
 
+        .studyBox {
+            text-align: left;
+
+        }
     </style>
 </head>
+
 <body>
     <br><br><br>
-    
+
     <div><!---page1 --->
-       
+
         <div> <!---바 메뉴 div-->
 
             <ul class="myMenu">
-            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
-            
-             <li class="menu1">
-                <button class ="barButton" type="button"  >서승권</button>
-                <ul class="menu1_s submenu">
-                    <li onclick="goTo(1)">서승권이란?</li>
-                </ul>
-            </li>
-            
-            <li class="menu2">
-                <button class ="barButton" type="button"  >학업</button>
-                <ul class="menu2_s submenu">
-                    <li onclick="goTo(2)">이수 과목</li>
-                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
-                </ul>
-            </li>
-            
+                <button class="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
 
-            <li class="menu3">
-                <button class ="barButton" type="button">학생자치기구활동</button>
-                <ul class="menu3_s submenu">
-                    <li onclick="goTo(4)">H-all</li>
-                    <li onclick="goTo(5)">A:ble</li>
-                    <li onclick="goTo(6)">Defy</li>
-                    <li onclick="goTo(7)">그,_림</li>
-                </ul>
-            </li>
-            
+                <li class="menu1">
+                    <button class="barButton" type="button">서승권</button>
+                    <ul class="menu1_s submenu">
+                        <li onclick="goTo(1)">서승권이란?</li>
+                    </ul>
+                </li>
 
-            <li class="menu4">
-                <button class ="barButton" type="button">개발일지</button>
-                <ul class="menu3_s submenu">
-                    <li onclick="goTo(8)">블로그 개발일지</li>
-                </ul>
-            </li>
+                <li class="menu2">
+                    <button class="barButton" type="button">학업</button>
+                    <ul class="menu2_s submenu">
+                        <li onclick="goTo(2)">이수 과목</li>
+                        <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                    </ul>
+                </li>
+
+
+                <li class="menu3">
+                    <button class="barButton" type="button">학생자치기구활동</button>
+                    <ul class="menu3_s submenu">
+                        
+                        <li onclick="goTo(5)">A:ble</li>
+                        <li onclick="goTo(6)">Defy</li>
+                        <li onclick="goTo(7)">그,_림</li>
+                    </ul>
+                </li>
+
+
+                <li class="menu4">
+                    <button class="barButton" type="button">개발일지</button>
+                    <ul class="menu3_s submenu">
+                        <li onclick="goTo(8)">블로그 개발일지</li>
+                    </ul>
+                </li>
             </ul>
 
         </div><!---바 메뉴 div-->
 
         <br><br><br>
 
-        <table style="width: 900px ;"> 
-        <tr> 
-            <td style="width: 400px;" >
-        
-                <div><!---왼쪽 타이틀,메인 사진-->
-            
-                    <div class="titleBody"> 
-        
-                        대학생활<br>수강과목<br>
-           
-                    </div>          
-                    <img src="../pics/seo2.png" alt="서승권 메인 사진" style="width: 300px; ; height: 400px" >
-                </div> <!--- 왼쪽 타이틀,메인 사진-->
-        
-            </td>
+        <table style="width: 900px ;">
+            <tr>
+                <td style="width: 400px;">
 
-            <td>
+                    <div><!---왼쪽 타이틀,메인 사진-->
 
-                <div class="rightTitle">
-                    <b>대학교를 다니면서<br>배우게 된 것들</b><hr>
-                </div>
-                
-                <br>
+                        <div class="titleBody">
 
-                <div class="rightSection">
-                    이 웹 사이트는 제 대학생활을 그대로 담고 있는 블로그입니다.<br>
-                    블로그를 방문하신 내빈 여러분들께서는 상단에 위치한 메뉴<br>
-                    클릭하여 원하는 게시물을 정독하시면 되겠습니다.   
-                </div>
-            </td>
-        </tr>
+                            대학생활<br>수강과목<br>
 
-    </table>
+                        </div>
+                        <img src="../pics/hand.png" alt="서승권 메인 사진" style="width: 80%; ; height: 80%">
+                    </div> <!--- 왼쪽 타이틀,메인 사진-->
+
+                </td>
+
+                <td>
+
+                    <div class="rightTitle">
+                        <b>대학교를 다니면서<br>배우게 된 것들</b>
+                        <hr>
+                    </div>
+
+
+
+                    <div class="rightSection">
+
+                        <table class="studyBox">
+                            <!--- 하나의 셀-->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img id="pic1" class="roundImg" src="../pics/javalogo.png"
+                                            style="width: 115px; height: 115px;">
+
+                                    </div>
+                                </td>
+                                <td style="width:70% ;">
+                                    <span class="studyBox">
+                                        <h3 id="title1">자바 프로그래밍</h3>
+                                    </span>
+                                    <span id="detail1">이클립스를 통해 객체지향 프로그래밍인 자바 프로그래밍 기술을 터득합니다.</span>
+                                    <hr style="height: 1px;">
+
+                                </td>
+                            </tr>
+                            <!--- 하나의 셀-->
+
+                            <!--- 하나의 셀-->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img id="pic2" class="roundImg" src="../pics/sslogo.png"
+                                            style="width: 115px; height: 115px;">
+
+                                    </div>
+                                </td>
+                                <td style="width:70% ;">
+                                    <span class="studyBox">
+                                        <h3 id="title2">신호 및 시스템</h3>
+                                    </span>
+                                    <span id="detail2">주파수와 주기, 오일러, 퓨리에 변환 등, 신호의 원리를 배웁니다.</span>
+                                    <hr style="height: 1px;">
+
+                                </td>
+                            </tr>
+                            <!--- 하나의 셀-->
+
+                            <!--- 하나의 셀-->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img id="pic3" class="roundImg" src="../pics/mysqllogo.png"
+                                            style="width: 115px; height: 115px;">
+
+                                    </div>
+                                </td>
+                                <td style="width:70% ;">
+                                    <span class="studyBox">
+                                        <h3 id="title3">신호 및 시스템</h3>
+                                    </span>
+                                    <span id="detail3">MySql을 통한 데이터베이스 구축과 이론적 지식을 함께 배웁니다.</span>
+                                    <hr style="height: 1px;">
+
+                                </td>
+                            </tr>
+                            <!--- 하나의 셀-->
+                        </table>
+
+                    </div>
+
+                    <p style="text-align: right;">
+                        <button class="moveButton" type="button" onclick="move(0)">이전</button>
+                        <button class="moveButton" type="button" onclick="move(2)">다음</button>
+                    </p>
+
+
+                </td>
+            </tr>
+
+        </table>
     </div><!---page1 --->
 </body>
+
 </html>

@@ -9,6 +9,90 @@
     <script src="./move.js">
 
     </script>
+
+    <script>
+
+        var a = 0;
+
+
+        var files = ["../pics/defyone.png",
+            "../pics/defytwo.png",
+            "../pics/defythree.png",
+        ];
+
+        var details = [
+            "디파이는 축구를 좋아하는 학우라면 누구든지 가입하여 함께 운동 할 수 있는 훌륭한 동아리입니다.<br><br>",
+            "디파이는 인트라뮤랄리그 조별리그에서 한 경기도 패배하지 않고 메이저 리그에 진출했습니다. 이것은 동아리에서의 첫 기록입니다.",
+            "정보과학대학 체육대회 축구부문 11대 11 풀코트 부분에서 디파이는 상대편을 꺾고 체육대회 우승을 차지하였습니다.",
+           ];
+
+        var titles = [
+        "누구나 즐길 수 있는 동아리",
+        "인트라뮤랄 조별리그 1위",
+        "정보과학대학 체육대회 우승",
+        ];
+
+
+        var imgs = new Array();
+
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image(); // 이미지 객체 생성
+            imgs[i].src = files[i]; // 이미지 로딩
+        }
+
+
+        function move(x) {
+            
+
+            var i1 = document.getElementById("pics1");
+            var t1 = document.getElementById("title1");
+            var d1 = document.getElementById("detail1");
+
+
+
+
+            if (x == 0) { //후진이요
+
+                a--;
+
+
+                if (a==-1 ) {
+                    a=2;
+                }
+
+                i1.style.width=
+                i1.src = imgs[a].src;
+                t1.innerHTML = titles[a];
+                d1.innerHTML = details[a];
+            
+
+            }
+
+
+
+            if (x == 2) { //전진이요
+
+                a++;
+
+                if (a==3) {
+                    a = 0;
+                }
+
+                i1.src = imgs[a].src;
+                t1.innerHTML = titles[a];
+                d1.innerHTML = details[a];
+
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+
     <link href="main.css" type="text/css" rel="stylesheet">
     <style>
        :root {
@@ -54,7 +138,7 @@
             <li class="menu3">
                 <button class ="barButton" type="button">학생자치기구활동</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(4)">H-all</li>
+                    
                     <li onclick="goTo(5)">A:ble</li>
                     <li onclick="goTo(6)">Defy</li>
                     <li onclick="goTo(7)">그,_림</li>
@@ -63,9 +147,9 @@
             
 
             <li class="menu4">
-                <button class ="barButton" type="button">개발일지</button>
+                <button class ="barButton" type="button">방명록</button>
                 <ul class="menu3_s submenu">
-                    <li onclick="goTo(8)">블로그 개발일지</li>
+                    <li onclick="goTo(8)">방명록 쓰기</li>
                 </ul>
             </li>
             </ul>
@@ -94,13 +178,37 @@
             <td>
 
                 <div class="rightTitle">
-                    <b>최강명문디파이<hr></b> 
+                    <b>디파이의 부회장<hr></b> 
                 </div>
                 
                 <br>
 
                 <div class="rightSection">
-                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+                    <table style="width: 92%; " ;>
+                        <tr>
+                            <td>
+                                <img id="pics1" class="roundImg" src="../pics/defyone.PNG"
+                                    style="width: 400px; height:250px;">
+                               
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2 id="title1">누구나 즐길 수 있는 동아리</h2>
+                                <span id="detail1">
+                                    디파이는 축구를 좋아하는 학우라면 누구든지 가입하여 함께 운동 할 수 있는 훌륭한 동아리입니다.<br><br>
+                                </span>
+                            </td>
+                        </tr>
+
+                    </table>
+                    
+                    <p style="text-align: right;">
+                        <button class="moveButton" type="button" onclick="move(0)">이전</button>
+                        <button class="moveButton" type="button" onclick="move(2)">다음</button>
+                    </p>
+
 
                     
                 </div>

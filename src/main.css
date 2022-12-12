@@ -86,3 +86,17 @@ ul, ol, li { list-style:none; font-style: bold;}
             text-align: start;
             margin-left: 40px;        
         }
+
+
+        .roundImg {
+            border-radius: 10%;
+        }
+
+        
+        .moveButton {  
+            cursor: pointer;
+            font-family: "YF"; 
+            border: 0;
+            background-color: transparent;
+            color: var(--maincolor);
+        }
