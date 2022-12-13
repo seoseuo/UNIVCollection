@@ -27,6 +27,7 @@ import org.ws4d.coap.core.tools.Encoder;
 
 public class GUI_Client extends JFrame implements CoapClient{
    private static final boolean exitAfterResponse = false;
+   
    JButton btn_get = new JButton("작동 부품 목룍");
    JButton btn_put = new JButton("원격 조작");
    JButton btn_observe = new JButton("현재 온도 확인");
@@ -35,6 +36,7 @@ public class GUI_Client extends JFrame implements CoapClient{
    JTextArea path_text = new JTextArea("/.well-known/core", 1,1);    
    JLabel payload_label = new JLabel("부품 조작 키");
    JTextArea payload_text = new JTextArea("", 1,1);      
+   
    JTextArea display_text = new JTextArea();
    JScrollPane display_text_jp  = new JScrollPane(display_text);
    JLabel display_label = new JLabel("Display");
@@ -176,12 +178,12 @@ public class GUI_Client extends JFrame implements CoapClient{
       display_text.append(System.lineSeparator());
       
       
-      //LED제어
+      
       //옵저버의 응답인지 확인한다.
       if(Encoder.ByteToString(response.getToken()).equals("obToken")) {
     	  float temp = Float.parseFloat(Encoder.ByteToString(response.getPayload()));
     	//temp값에 따라서 led resource에 대한 PUT 요청메세지 전송
-    	//temp값이 화재 발생 시 온도(화재 상황까지 극한으로 온도를 올릴 수 없으니 35도)에 도달했을 때 
+    	//temp값이 화재 발생 시 온도(화재 상황까지 극한으로 온도를 올릴 수 없으니 30도)에 도달했을 때 
     	  this.control(temp); //컨트롤 메소드
     	  
       }
@@ -193,12 +195,12 @@ public class GUI_Client extends JFrame implements CoapClient{
 	   CoapRequest buz = clientChannel.createRequest(CoapRequestCode.PUT, "/buzzer", true); //buzzer
 	   if(temp>=30.0) {
 		   led.setPayload(new CoapData("red",CoapMediaType.text_plain));//화재 발생 시 붉은색
-		   lcd.setPayload(new CoapData("A fire broke out.\ncall 119 !!",CoapMediaType.text_plain)); // 화재 발생, 대피 문구
+		   lcd.setPayload(new CoapData("A fire broke out.",CoapMediaType.text_plain)); // 화재 발생, 
 		   buz.setPayload(new CoapData("on", CoapMediaType.text_plain)); //경보 울림
 	   } 
 	   else { 
 		   led.setPayload(new CoapData("green",CoapMediaType.text_plain));////안전 상태일 때 녹색
-		   lcd.setPayload(new CoapData("It's safe now~~~~",CoapMediaType.text_plain)); // 화재 발생, 대피 문구
+		   lcd.setPayload(new CoapData("It's safe now~~~~",CoapMediaType.text_plain)); // 화재 발생, 
 		   buz.setPayload(new CoapData("off", CoapMediaType.text_plain)); //경보 꺼짐
 		   } 
 	   
@@ -221,7 +223,7 @@ public class GUI_Client extends JFrame implements CoapClient{
 		String temp = Encoder.ByteToString(request.getPayload());
 		if(request.getPayload() != null){
 			if(temp.equals("red")) {
-			display_text.append("집안의 화재가 의심되는 상황입니다. 주변에 도움을 요청하거나 119를 부르십시오");
+			display_text.append("화재가 의심되는 상황입니다. 화재 상황인지 식별하고, 조치를 취하십시오");
 			display_text.setCaretPosition(display_text.getDocument().getLength());  
 		} 
 			

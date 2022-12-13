@@ -23,7 +23,7 @@ public class LED extends BasicCoapResource{
 		this("/led", "off", CoapMediaType.text_plain);
 
 		gpio = GpioFactory.getInstance();
-		// week14 LED 모듈 핀 번호 수정 (8,9,7->23,24,25)
+		
 		r_led = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_23, PinState.LOW);
 		g_led = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_24, PinState.LOW);
 		b_led = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_25, PinState.LOW);				

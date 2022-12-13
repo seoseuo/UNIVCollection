@@ -16,7 +16,7 @@ import com.pi4j.io.i2c.I2CDevice;
 import com.pi4j.io.i2c.I2CFactory;
 import com.pi4j.io.i2c.I2CFactory.UnsupportedBusNumberException;
 
-import week7.I2CLCD;
+import project.I2CLCD;
 
 public class LCD extends BasicCoapResource{
    private String state = "off";

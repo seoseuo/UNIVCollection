@@ -29,6 +29,8 @@ public class Buzzer extends BasicCoapResource{
 		gpio = GpioFactory.getInstance();
 		buzzer = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01,PinState.HIGH); 
 	}
+	
+	
 	@Override
 	public synchronized CoapData get(List<String> query, List<CoapMediaType> mediaTypesAccepted) {
 		return get(mediaTypesAccepted);
@@ -52,6 +54,8 @@ public class Buzzer extends BasicCoapResource{
 		
 		return true;
 	}
+	
+	
 	public synchronized boolean post(byte[] data, CoapMediaType type) {
 		return this.setValue(data);
 	}

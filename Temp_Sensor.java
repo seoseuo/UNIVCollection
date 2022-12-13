@@ -6,7 +6,7 @@ import org.ws4d.coap.core.enumerations.CoapMediaType;
 import org.ws4d.coap.core.rest.BasicCoapResource;
 import org.ws4d.coap.core.rest.CoapData;
 import org.ws4d.coap.core.tools.Encoder;
-import week7.DHT11;
+import project.PJDHT11;
 
 public class Temp_Sensor extends BasicCoapResource{
 
