@@ -9,7 +9,7 @@
 - - -
 
 Detail Progress to 
-Notion : https://www.notion.so/22-2-bb153aa25b114819a6162dae5020fb47
+Notion : https://www.notion.so/SEOSEUOLOG-dff9d014ee2547588cabadc529ebbcba
 
 git.io Link :https://seoseuo.github.io/SEOSEUOLOG/
 
