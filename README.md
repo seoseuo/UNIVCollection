@@ -1,11 +1,14 @@
-###간단한 인터넷 신문 페이지 제작
+#스포츠 인터넷 뉴스 페이지
 
-Tech Stack : java Script , Css , Html
-![image](https://user-images.githubusercontent.com/90320005/209314902-4ce1d5d2-6240-475f-a4fd-bd059a58e5f0.png)
+###Tech Stack
+![image](https://user-images.githubusercontent.com/90320005/209314902-4ce1d5d2-6240-475f-a4fd-bd059a58e5f0.png)![image](https://user-images.githubusercontent.com/90320005/209314932-58675f72-01da-4c76-9f40-a1385aa2016e.png)![image](https://user-images.githubusercontent.com/90320005/209314936-2c9edcdf-de01-4cea-a7a4-eb54dc668113.png)
+- - -
 
-개요 : 카타르 월드컵 16강 진출 기념으로 간단한 웹 인터넷 신문을 만들었다.
+###개요
+
+> 웹 뉴스 페이지를 구현. 단기 미니 프로젝트 입니다.
 
 - - -
 
-detail Proccess
+###detail Proccess
 Notion : https://chivalrous-saffron-326.notion.site/0a53fa1c8f7949d1af6ee8b9326e3610
