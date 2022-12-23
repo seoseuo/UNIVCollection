@@ -4,7 +4,7 @@
 
 # 무인 화재 경보 시스템
 
-![image](https://user-images.githubusercontent.com/90320005/209314241-e1b6aff7-2d40-4272-8f34-b791bafbce57.png)
+![image](https://user-images.githubusercontent.com/90320005/209314241-e1b6aff7-2d40-4272-8f34-b791bafbce57.png){: width="30" height="30"}
 notion : https://www.notion.so/22-2-98a8e1ee2edb4d04bb9485dec8a5356f
 
 - - -
@@ -34,3 +34,15 @@ notion : https://www.notion.so/22-2-98a8e1ee2edb4d04bb9485dec8a5356f
 - - -
 
 ###시연 영상
+
+
+
+https://user-images.githubusercontent.com/90320005/209314354-bc7c91e0-4122-4def-938a-4ff1d9b93bbc.mp4
+
+
+
+https://user-images.githubusercontent.com/90320005/209314461-fcdc31a5-611f-4e0a-869d-d3c3cc113f79.mp4
+
+
+
+
