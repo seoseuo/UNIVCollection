@@ -4,9 +4,6 @@
 
 # 무인 화재 경보 시스템
 
-![image](https://user-images.githubusercontent.com/90320005/209314241-e1b6aff7-2d40-4272-8f34-b791bafbce57.png){: width="30" height="30"}
-notion : https://www.notion.so/22-2-98a8e1ee2edb4d04bb9485dec8a5356f
-
 - - -
 
 ![슬라이드2](https://user-images.githubusercontent.com/90320005/209313580-ec9ac35b-34a0-4d74-b695-6b6bae8e9f55.PNG)
