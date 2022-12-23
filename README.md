@@ -11,4 +11,4 @@
 - - -
 
 ### Detail Proccess
-Notion : https://chivalrous-saffron-326.notion.site/0a53fa1c8f7949d1af6ee8b9326e3610
+Notion : https://chivalrous-saffron-326.notion.site/WEB-NEWS-0375e16d4c874b9a8519f88ad4a4be7a
