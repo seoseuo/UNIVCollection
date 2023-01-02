@@ -1,5 +1,3 @@
-# -Embedded-fire-alarm-system
-
 ### 임베디드 시스템 프로젝트
 
 # 무인 화재 경보 시스템
