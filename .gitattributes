@@ -3,5 +3,3 @@
 # *.sql linguist-vendored=false
 
 * linguist-vendored
-SQL/** linguist-documentation=false
-SQL/** linguist-vendored=false
