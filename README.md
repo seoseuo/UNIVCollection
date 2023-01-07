@@ -2,7 +2,7 @@
 ### 자바를 통하여 알고리즘 구현
 - - -
 
-`w09부터 해당 디렉토리에 README 존재`
+`🎁 w09 부터 각 디렉토리에 README.md 존재`
 
 
 ## 📖Github Source READ ME.
