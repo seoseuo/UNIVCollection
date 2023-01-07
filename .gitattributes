@@ -1,2 +1,4 @@
-SQL/* linguist-documentation=false
-SQL/* linguist-vendored=false
+SQL/** linguist-documentation=false
+SQL/** linguist-vendored=false
+*.sql linguist-vendored=false
+*.java linguist-detectable=false
