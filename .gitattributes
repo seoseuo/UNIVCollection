@@ -3,3 +3,4 @@
 # *.sql linguist-vendored=false
 
 * linguist-vendored
+* .sql linguist-vendored=false
