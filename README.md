@@ -5,7 +5,7 @@
 `🎁 w09 부터 각 디렉토리에 README.md 존재`
 
 
-## 📖Github Source READ ME.
+## 📖Github Source READ ME
 
 <aside>
  
