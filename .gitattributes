@@ -3,4 +3,5 @@
 # *.sql linguist-vendored=false
 
 * linguist-vendored
-* .sql linguist-vendored=false
+SQL/** linguist-documentation=false
+SQL/** linguist-vendored=false
