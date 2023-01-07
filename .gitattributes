@@ -1,5 +1,3 @@
-# SQL/** linguist-documentation=false
-# SQL/** linguist-vendored=false
- 
-* .java linguist-vendored
-* .sql linguist-vendored=false
+SQL/** linguist-documentation=false
+SQL/** linguist-vendored=false
+
