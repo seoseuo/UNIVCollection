@@ -19,7 +19,9 @@
 
 ` 📂SQL ` :  SQL 실습 
 
-` 📂servlet ` :  servlet 실습 코드 파일 
+` 📂servlet ` :  servlet 자료
+
+` 📂servlet_ex ` :  servlet 실습 코드 파일 
 
 ` 📃mysql-connector ` : for JDBC & Apach Tomcat SQL 커넥터
 
