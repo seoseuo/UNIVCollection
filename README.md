@@ -19,11 +19,13 @@
 
 ` 📂SQL ` :  SQL 실습 
 
+` 📂servlet ` :  servlet 실습 코드 파일 
+
 ` 📃mysql-connector ` : for JDBC & Apach Tomcat SQL 커넥터
 
 **수업 진도 순서**
 
-`SQL` - `JDBC` - `Apach Tomcat`
+`SQL` - `JDBC` - `Apach Tomcat` - `servlet`
 
 - - -
 ## Info
