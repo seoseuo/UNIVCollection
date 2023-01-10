@@ -22,3 +22,7 @@
 **수업 진도 순서**
 
 `SQL` - `JDBC` - `Apach Tomcat`
+
+- - -
+## Info
+`10/28` : Apach Tomcat 8.5v -> 9.0v
