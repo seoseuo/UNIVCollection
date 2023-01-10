@@ -176,7 +176,7 @@ CREATE DATABASE 데이터베이스명;
 ### 데이터베이스 목록 보기
 
 ```sql
-SHOW DATABBASE;
+SHOW DATABASE;
 ```
 
 ### 데이터베이스 삭제
