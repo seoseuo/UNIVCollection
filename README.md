@@ -19,6 +19,8 @@
 
 ` 📂SQL ` :  SQL 실습 
 
+` 📃mysql-connector ` : for JDBC & Apach Tomcat SQL 커넥터
+
 **수업 진도 순서**
 
 `SQL` - `JDBC` - `Apach Tomcat`
