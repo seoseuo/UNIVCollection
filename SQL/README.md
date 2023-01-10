@@ -314,3 +314,13 @@ DELETE FROM 테이블명 WHERE 조건식
 # Foreign Key
 
 ### 테이블 생성 명령
+```sql
+CREATE TABLE 테이블명 (
+	필드명1 타입,
+	필드명2 타입,
+	. . . . . . .
+	PRIMARY KEY(필드명),
+	FOREIGN KEY 속성이름 REFERENCES 테이블이름(속성이름)
+	[ON DELETE [CASCADE┃SET NULL]
+);
+```
