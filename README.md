@@ -13,7 +13,7 @@
 
 ` 📂JDBC_PJ ` :  JDBC 실습 
 
-` 📂JSP_EX1 ` :  Apach Tomcat 실습
+` 📂JSP_EX1,2 ` :  Apach Tomcat 실습
 
 ` 📂Servers ` :  Apach Tomcat 실습 서버 세팅
 
