@@ -11,13 +11,13 @@
 
 # 📁Folder
 
-` 📂JDBC_PJ ` :  JDBC 실습 
+` 📂JDBC_PJ ` :  JDBC 실습 , JDBC 기초 개념
 
 ` 📂JSP_EX1,2 ` :  Apach Tomcat 실습
 
 ` 📂Servers ` :  Apach Tomcat 실습 서버 세팅
 
-` 📂SQL ` :  SQL 실습 
+` 📂SQL ` :  SQL 실습 , SQL 기초 개념
 
 ` 📂servlet ` :  servlet 자료
 
