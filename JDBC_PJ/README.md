@@ -163,7 +163,7 @@
     1. `ResultSet` 인터페이스
         1. 검색 시 SQL문 실행 결과가 저장됨.
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1cad3874-28e6-407c-a147-e4a4ed5b4747/Untitled.png)
+        ![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1cad3874-28e6-407c-a147-e4a4ed5b4747%2FUntitled.png?id=98493362-a7cf-4ffe-8148-cb9f1aaeb467&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1670&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
         
     
     - 실질적으로 질의 결과의 자료가 있는 영역과 함께 BOF , EOF 제공
@@ -174,7 +174,7 @@
     - ResultSet 에서 모든 데이터를 다 읽어들인 후에는 close()를 호출하여 자원 해제
         
         ![
-        ](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1d44487-7cf5-4911-90b1-5b969988194e/Untitled.png)
+        ](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd1d44487-7cf5-4911-90b1-5b969988194e%2FUntitled.png?id=42041786-6813-4077-af17-36ec4f0d1e47&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1430&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
         
 7. 모든 객체를 해제
     1. `close`
@@ -256,14 +256,14 @@
     - Statement의 executeQuery()는 SQL문에 실행하여 결과를 넘겨줌
     - 위의 SQL문의 user 테이블에서 모든 행의 모든 열을 읽어 결과를 resultSet에 저장
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/29d37ddd-f662-4065-b0a5-4a070629ae9c/Untitled.png)
+    ![Untitled]https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F29d37ddd-f662-4065-b0a5-4a070629ae9c%2FUntitled.png?id=d32ac30f-44c9-41d7-a394-6bd70f2a613e&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1530&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
     
 - **ResultSet에서 데이터를 얻는 방법**
     - 행과 열을 지정
         - 행 : ResultSet의 next()를 이용 이동 및 지정
         - 열: getXXX()를 이용하여 칼럼 이름이나 칼럼 번호를 지정
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e101f79-1938-4999-bb52-7cfc68bf0a1d/Untitled.png)
+        ![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1e101f79-1938-4999-bb52-7cfc68bf0a1d%2FUntitled.png?id=b1409326-5fc1-42b0-ab3d-9de3b5e6c7ae&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1530&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
         
 - **특정 열만 검색**
     
