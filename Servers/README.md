@@ -13,7 +13,7 @@
 - 클라이언트가 `GET`, `POST` 등의 메소드를 이용해 전송한 요청을 받아 HTML이나 오브젝트를 HTTP 프로토콜을 이용해 전송하는 프로그램이다.
 - 웹 서버는 웹 페이지, 이미지 등의 ***정적인 컨텐츠***만 제공할 수 있다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63fa60bd-7fc5-45eb-af72-d41c6d6eb67d/Untitled.png)
+![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F63fa60bd-7fc5-45eb-af72-d41c6d6eb67d%2FUntitled.png?id=9ec23e8d-6e90-43ea-be06-abe70f7ccd06&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1540&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
 
 ### 웹 서버가 필요한 이유
 
@@ -29,7 +29,7 @@
 - Tomcat은 ***JAVA Servlet***과 ***JSP***가 실행 할 수 있는 환경을 제공하여 동적 페이지를 생성한다.
 - DB 연결 및 데이터 조작, 다른 응용프로그램들과 상호 작용이 가능하다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/775819dc-5faf-48bf-b2fe-35a5f7f547da/Untitled.png)
+![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F775819dc-5faf-48bf-b2fe-35a5f7f547da%2FUntitled.png?id=b8dd5ecf-6348-4085-9027-eb2d2975708e&table=block&spaceId=f02911ff-a5c6-4c9a-ae3e-63ed719e4cfe&width=1390&userId=fc7411bc-598e-431d-b643-0d71559a3db0&cache=v2)
 
 > 이미지 참조: [https://doitnow-man.tistory.com/109](https://doitnow-man.tistory.com/109)
 > 
