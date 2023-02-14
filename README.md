@@ -1,3 +1,4 @@
+![아이콘](https://user-images.githubusercontent.com/90320005/218782537-f8118cfb-81bf-4c7d-9ca7-860e973f995e.png)
 # HNB
 ### Hallam notice board - 프리 캡스톤 한림대학교 자유게시판
 
