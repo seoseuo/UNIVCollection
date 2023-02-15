@@ -27,7 +27,7 @@
 ![DB_Dia](https://user-images.githubusercontent.com/90320005/218781871-b093982b-49a6-4bac-85b4-7b9a8a305ef2.png)
 
 
-## 예제 페이지![005](https://user-images.githubusercontent.com/90320005/218781934-18f2a661-239b-49d6-bbf4-75b84e4e2ca3.png)
+## 예제 페이지
 
 ![001](https://user-images.githubusercontent.com/90320005/218781907-7ac42a4e-18b7-44f6-accd-b703462a425c.png)
 ![002](https://user-images.githubusercontent.com/90320005/218781915-f3ca7cdb-98bb-4de5-bf21-5b5f8565b6e7.png)
