@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/90320005/227494911-801eaf9c-446f-4bb5-bf95-ff807811d151.png)
+
 # HallymWiki
 웹 서버 구축 미니 프로젝트 한림위키 입니다.
 
