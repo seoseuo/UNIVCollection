@@ -7,17 +7,17 @@
 ![SEOSEUOLOG](https://user-images.githubusercontent.com/90320005/211275248-cef53fd8-72f5-4e21-a767-d93525b77f88.PNG)
 
 
-# ❔About
+# 소개
 
 <aside>
-
-`💬 HTML, JS, CSS 기반으로 제작한 나의 대학 생활을 소개하는 프론트 엔드 프로젝트 입니다.`
+💬 HTML, JS, CSS 기반으로 제작한 나의 대학 생활을 소개하는 프론트 엔드 프로젝트 입니다.
 
 </aside>
+---
 
 ---
 
-# 💨Main Feat
+# 주요 기능
 
 - 메인 화면
     - 메인 화면에는 간략한 웹 블로그 소개가 기재되어 있습니다.
@@ -34,13 +34,14 @@
 
 ---
 
-# 🍣Role
+# 역할
 
 > 초기 아이디어 기획, 인터페이스 제작, 기능 구현 등 기획부터 마감까지 모두 맡았습니다.
+> 
 
 ---
 
-# 🤸‍♂️Introduction
+# 내용
 
 ![슬라이드3](https://user-images.githubusercontent.com/90320005/211274137-31895d03-65b7-48f5-97b9-dfcc40d2e02e.PNG)
 ![슬라이드4](https://user-images.githubusercontent.com/90320005/211274140-bedf701b-beee-4792-8c49-a891f778baf3.PNG)
@@ -50,11 +51,11 @@
 
 ---
 
-# 📒PROGRESS
+# 진행과정
  <a href="https://chivalrous-saffron-326.notion.site/SEOSEUOLOG-dff9d014ee2547588cabadc529ebbcba"><img src="https://img.shields.io/badge/DETAIL BIO & Progress & Video-E6E6E6?style=for-the-badge&logo=notion&logoColor=black" /></a>
 
 ---
 
-# ✒Review
+# 후기
 처음으로 만들어보는 나의 웹 기반 포트폴리오이자, 프로젝트이다. DB연동과 댓글 기능 보완을 추가하고, 다음엔 다른 디자인으로 프론트엔드 프로젝트를 만들어보고싶다.
 
