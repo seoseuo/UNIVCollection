@@ -1,5 +1,7 @@
+![아이콘](https://github.com/seoseuo/HNB/assets/90320005/3b981ab8-e177-4927-be1b-29f7af556310)
+
 > **Hallam notice board - 프리 캡스톤 ‘한림대학교 자유게시판’**
-> 
+
 
 ---
 
