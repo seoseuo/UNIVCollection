@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>춘자 : 춘자 랭킹</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+        .admin_table {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 30px;
+            border: 2px black solid;
+            width: 95%;
+            border-radius: 20px
+        } 
+        
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="title">
+         <span class="user">관리자님, 환영합니다 !</span>
+        <span class="logout-box" onclick="location.href='processing.jsp'">로그아웃</span>
+
+    </div>
+
+    <table class="title-back">
+        <td style=" width:760px; height: 260px;">
+            <div style="margin-left: 50px">
+
+                <div class="index-box" onclick="location.href='processing.jsp'">
+                </div>
+            </div>
+        </td>
+        <td style=" width:760px; height: 260px; text-align: right; font-family: 'CJFONT';
+        color: #FFF3FD;">
+            <div style="margin-right: 40px"><br>
+                <span style="font-size: 50px; font-weight:bold;font-weight:bold;">관리자 페이지</span><br>
+                <span style="font-size: 70px; font-weight:bold;font-weight:bold;"></span>
+            </div>
+        </td>
+    </table>
+
+    <div style="text-align:center;">
+        <b class="s1">춘자 회원 명단</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b class="s2">춘자 한마디 신고 목록</b>
+    </div>
+
+    <div class="RankView">
+        
+        
+        <table class="admin_table">
+            <tr><b>
+                <td><b>사장님 이름</b></td>
+                <td><b>사장님 아이디</b></td>
+                <td><b>사장님 가게이름</b></td>
+                <td><b>사장님 가게 주소</b></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table class="admin_table">
+            <tr><b>
+                <td><b>손님 이름</b></td>
+                <td><b>손님 아이디</b></td>
+
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+
+        
+
+        
+    </div>
+
+
+</body>
+
+</html>
