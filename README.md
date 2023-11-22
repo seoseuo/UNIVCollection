@@ -40,7 +40,7 @@ link : https://www.kaggle.com/datasets/oles04/top-leagues-player
 
 ## 가설
 1.
-<pre>주 발이 오른발이고 포지션이 공격수인 선수들의 최대 이적료는 그렇지 않은 선수들보다 크다.</pre>
+<pre>주 발이 오른발이고 포지션이 공격수인 선수들의 최대 이적료 평균은 그렇지 않은 선수들보다 크다.</pre>
 
 
 2.
