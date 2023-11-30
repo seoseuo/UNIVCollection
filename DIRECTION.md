@@ -40,37 +40,54 @@
 `비즈니스적인 추가기능 필요 요망 , , , `
 <hr>
 
-
-## 뷰 페이지
-#### 공통
-- 표지
-- 로그인 (성공 실패 arlter)
-- 회원가입 (성공 실패 arlter)
-
-#### 관리자
-- 관리자 메인
-- 회원 목록 확인
-- 회원 다이어리 검색 결과
-
-#### 회원
-- 회원 메인
-- 회원 다이어리 열람
-- 회원 다이어리 작성
-- 팔로워 메인
-- 팔로워 다이어리 열람
-- 내 정보
-- 내 정보 수정
-- 다이어리 검색 (검색 실패 arlter)
-- 다이어리 검색 결과
-<hr>
-
-## 소스 모듈 com.everyweather
-- com.everyweather.admin
-- com.everyweather.member
-- com.everyweather.diary
-<hr>
-
 ## 폴더링
+`지속적으로 추가 예정`
+![image](https://github.com/seoseuo/WDRY/assets/90320005/b2e30123-99fa-4bc0-b27c-8154b4ed5f10)
+
+#### com.everyweather
+- com.everyweather.admin
+  * 컨트롤러
+  * 서비스
+  * Dao
+  * 객체
+    
+- com.everyweather.member
+  * 컨트롤러
+  * 서비스
+  * Dao
+  * 객체
+    
+- com.everyweather.diary
+  * 컨트롤러
+  * 서비스
+  * Dao
+  * 객체
+
+#### /views
+-  메인 화면
+- 로그인 화면
+- 회원 가입 화면
+  
+- /admin
+  * 관리자 메인 화면
+  * 관리자 회원 목록 화면
+  * 관리자 다이어리 검색 화면
+  * 관리자 다이어리 검색 결과 화면
+  * 관리자 다이어리 뷰 화면
+
+- /member
+  * 회원 화면
+  * 회원 검색 화면
+  * 회원 검색 결과 화면
+  * 회원 정보 화면
+  * 회원 정보 수정 화면
+  * 회원 필터링 검색
+  * 회원 필터링 검색 결과
+ 
+- /diary
+  * 다이어리 열람 화면
+  * 다이어리 작성 화면
+  * 다이어리 수정 화면
 <hr>
 
 ## 시나리오 순서도
