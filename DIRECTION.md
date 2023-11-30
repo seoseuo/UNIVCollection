@@ -126,6 +126,8 @@
 <hr>
 
 ## 데이터 베이스
+![image](https://github.com/seoseuo/EveryWeather/assets/90320005/d3bd9ebb-9e3f-4360-b305-944f6cc8beb7)
+
 <hr>
 
 ## 참고 링크
