@@ -5,6 +5,14 @@
 ## 디자인
 #### 아이디어
 - `매일(Every)` 을 `날씨(Weather)` 와 함께 기록하는 다이어리. `EveryWeather`라는 이름을 착안
+
+#### 폰트 에스코어 드림
+<pre>@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}</pre>
   
 <hr>
 
@@ -42,7 +50,9 @@
 
 ## 폴더링
 `지속적으로 추가 예정`
-![image](https://github.com/seoseuo/WDRY/assets/90320005/b2e30123-99fa-4bc0-b27c-8154b4ed5f10)
+![image](https://github.com/seoseuo/EveryWeather/assets/90320005/6766fa62-e094-4748-81df-e0f438030643)
+
+
 
 
 #### com.everyweather
