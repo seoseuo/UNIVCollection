@@ -136,6 +136,101 @@
   
 <hr>
 
+## 컨트롤러 및 이동url
+2023.12.08
+`동작`이 아닌 `이동`에 대한 url 임. 헷갈리지 않도록 적어놓음
+<code>package com.everyweather.member;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+//MemberController.java
+
+@Controller
+@RequestMapping("/member")
+public class MemberController {
+
+	String nextPage;
+
+	@GetMapping("/member_main")
+	public String member_main() {
+		System.out.println("[MemberController] member_main.jsp");
+		nextPage = "member/member_main";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_search_id")
+	public String member_search_id() {
+		System.out.println("[MemberController] member_search_id.jsp");
+		nextPage = "member/member_search_id";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_search_diary")
+	public String member_search_diary() {
+		System.out.println("[MemberController] member_search_diary.jsp");
+		nextPage = "member/member_search_diary";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_info")
+	public String member_info() {
+		System.out.println("[MemberController] member_info.jsp");
+		nextPage = "member/member_info";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_info_edit")
+	public String member_info_edit() {
+		System.out.println("[MemberController] member_info_edit.jsp");
+		nextPage = "member/member_info_edit";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_following_view")
+	public String member_following_view() {
+		System.out.println("[MemberController] member_following_view.jsp");
+		nextPage = "member/member_following_view";
+		return nextPage;
+	}
+	
+	
+	@GetMapping("/member_diary_my_view")
+	public String member_diary_view() {
+		System.out.println("[MemberController] member_diary_my_view.jsp");
+		nextPage = "member/member_diary_my_view";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_diary_following_view")
+	public String member_diary_following_view() {
+		System.out.println("[MemberController] member_diary_following_view.jsp");
+		nextPage = "member/member_diary_following_view";
+		return nextPage;
+	}
+	
+	@GetMapping("/member_diary_my_write")
+	public String member_diary_write() {
+		System.out.println("[MemberController] member_diary_my_write.jsp");
+		nextPage = "member/member_diary_my_write";
+		return nextPage;
+	}
+
+	@GetMapping("/member_diary_my_edit")
+	public String member_diary_edit() {
+		System.out.println("[MemberController] member_diary_my_edit.jsp");
+		nextPage = "member/member_diary_my_edit";
+		return nextPage;
+	}
+	
+	
+}
+</code>
+
 ## 데이터 베이스
 ![image](https://github.com/seoseuo/EveryWeather/assets/90320005/e6d0cfc6-78da-487f-85f3-a9c0402789f1)
 
