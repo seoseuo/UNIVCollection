@@ -231,6 +231,9 @@ public class MemberController {
 }
 </code>
 
+12.08
+- 로그아웃 시 위치 정보 해제하는 `navigator.geolocation.clearWatch()` 사용
+
 ## 데이터 베이스
 ![image](https://github.com/seoseuo/EveryWeather/assets/90320005/e6d0cfc6-78da-487f-85f3-a9c0402789f1)
 
