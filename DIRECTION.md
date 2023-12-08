@@ -233,6 +233,122 @@ public class MemberController {
 
 12.08
 - 로그아웃 시 위치 정보 해제하는 `navigator.geolocation.clearWatch()` 사용
+- openweatherAPI 날씨 종류
+  <code>
+if(date === today) {
+
+			    	if(time === '12') {
+
+			    		if (weath === 'sky is clear') {
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon sun'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'few clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'scattered clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'broken clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'overcast clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'shower rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'light rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'moderate rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'Rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'Thunderstorm'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'snow'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon snow2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'mist'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	}
+
+			    	}
+
+			    } else {
+
+			    	if(time === '12') {
+
+			    		if (weath === 'sky is clear') {
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon sun'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'few clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'scattered clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'broken clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'overcast clouds'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'shower rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'light rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'moderate rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'Rain'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'Thunderstorm'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'snow'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon snow2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	} else if(weath === 'mist'){
+
+				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
+
+				    	}
+
+			    	}
+
+			    }
+  </code>
 
 ## 데이터 베이스
 ![image](https://github.com/seoseuo/EveryWeather/assets/90320005/e6d0cfc6-78da-487f-85f3-a9c0402789f1)
