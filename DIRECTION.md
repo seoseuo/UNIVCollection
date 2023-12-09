@@ -236,12 +236,62 @@ public class MemberController {
 
 12.09
 - 금일 구현 예정 동작
-  * 로그인 시, 계정 정보를 통해서 화면 계정에 맞게 출력해주기
-    + 세션에 저장한 memberVo 객체의 getE_id() 함수로 값을 JSP에 담아서
-      	- `top` progfile , name , bio 꺼내오기
+  * 로그인 시, 계정 정보를 통해서 화면 계정에 맞게 출력해주기 `완료`
+  * 뷰 객체 import , jsp에서 가져오는 코드
+    <code>
+    	<%@ page import="java.util.List" %>
+	<%@ page import="java.util.ArrayList" %>
+
+    	<%@page import="com.everyweather.member.MemberVo"%>
+	<% MemberVo loginMemberVo = (MemberVo)session.getAttribute("loginMemberVo");%>
+    </code>
+    
+  * 뷰 객체 getter/setter
+    <code>
+		public String getE_name() {
+		return e_name;
+	}
+	public void setE_name(String e_name) {
+		this.e_name = e_name;
+	}
+	public String getE_id() {
+		return e_id;
+	}
+	public void setE_id(String e_id) {
+		this.e_id = e_id;
+	}
+	public String getE_pw() {
+		return e_pw;
+	}
+	public void setE_pw(String e_pw) {
+		this.e_pw = e_pw;
+	}
+	public String getE_mail() {
+		return e_mail;
+	}
+	public void setE_mail(String e_mail) {
+		this.e_mail = e_mail;
+	}
+	public String getE_profilePic() {
+		return e_profilePic;
+	}
+	public void setE_profilePic(String e_profilePic) {
+		this.e_profilePic = e_profilePic;
+	}
+	public String getE_bio() {
+		return e_bio;
+	}
+	public void setE_bio(String e_bio) {
+		this.e_bio = e_bio;
+	}
+    </code>
+    + 세션에 저장한 memberVo 객체의 getE_id() 함수로 값을 JSP에 담아서 `완료`
+      	- `top` progfile , name , bio 꺼내오기 `완료`
+      	  
       	- `content` follow_box , calender 바꾸기
-  * 팔로우 박스에 내가 팔로우 하는 리스트 확인하기
-    	+ 지금 회원이 팔로우 하는 목록 memberVo 리스트 타입 배열로 가져와서 나열
+      	  
+  * 팔로우 박스에 내가 팔로우 하는 리스트 확인하기 `완료`
+    	+ 지금 회원이 팔로우 하는 목록 memberVo 리스트 타입 배열로 가져와서 나열 `완료`
   * 팔로잉 클릭하면 해당 회원 페이지로 이동
   * 아이디 검색, 아이디 리스트
   * 다이어리 검색, 다이어리 리스트
@@ -249,6 +299,7 @@ public class MemberController {
   * 자기소개 수정 (사진 변경 기능도 추가 할 것)
   * 다이어리 클릭 시 넘어온 숫자 값에 대해서 글을 작성 했는지 안했는지 확인하고 후처리 하기
   * 팔로우 하는 회원 다이어리 클릭 했을 때는 해당 회원걸로 보기
+  * 친구 팔로우 하기
   * `추가` 나를 팔로우 하는 회원 리스트 확인하기
 
 ## 데이터 베이스
