@@ -233,122 +233,23 @@ public class MemberController {
 
 12.08
 - 로그아웃 시 위치 정보 해제하는 `navigator.geolocation.clearWatch()` 사용
-- openweatherAPI 날씨 종류
-  <code>
-if(date === today) {
 
-			    	if(time === '12') {
-
-			    		if (weath === 'sky is clear') {
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon sun'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'few clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'scattered clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'broken clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'overcast clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'shower rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'light rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'moderate rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'Rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'Thunderstorm'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'snow'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon snow2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'mist'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	}
-
-			    	}
-
-			    } else {
-
-			    	if(time === '12') {
-
-			    		if (weath === 'sky is clear') {
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon sun'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'few clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'scattered clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'broken clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'overcast clouds'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'shower rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'light rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'moderate rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'Rain'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'Thunderstorm'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon rain2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'snow'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon snow2'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	} else if(weath === 'mist'){
-
-				    		$("#weather").append("<div style='float:left;' class='weather-card'><div class='weather-icon cloud'></div><h1>"+max+"</h1><p>"+todayLabel+"</p></div>");
-
-				    	}
-
-			    	}
-
-			    }
-  </code>
+12.09
+- 금일 구현 예정 동작
+  * 로그인 시, 계정 정보를 통해서 화면 계정에 맞게 출력해주기
+    + 세션에 저장한 memberVo 객체의 getE_id() 함수로 값을 JSP에 담아서
+      	- `top` progfile , name , bio 꺼내오기
+      	- `content` follow_box , calender 바꾸기
+  * 팔로우 박스에 내가 팔로우 하는 리스트 확인하기
+    	+ 지금 회원이 팔로우 하는 목록 memberVo 리스트 타입 배열로 가져와서 나열
+  * 팔로잉 클릭하면 해당 회원 페이지로 이동
+  * 아이디 검색, 아이디 리스트
+  * 다이어리 검색, 다이어리 리스트
+  * 자기소개 화면 불러오기
+  * 자기소개 수정 (사진 변경 기능도 추가 할 것)
+  * 다이어리 클릭 시 넘어온 숫자 값에 대해서 글을 작성 했는지 안했는지 확인하고 후처리 하기
+  * 팔로우 하는 회원 다이어리 클릭 했을 때는 해당 회원걸로 보기
+  * `추가` 나를 팔로우 하는 회원 리스트 확인하기
 
 ## 데이터 베이스
 ![image](https://github.com/seoseuo/EveryWeather/assets/90320005/e6d0cfc6-78da-487f-85f3-a9c0402789f1)
