@@ -1,6 +1,6 @@
 # 소개
 ![슬라이드1](https://github.com/seoseuo/Chunja/assets/90320005/4f68816f-7bfa-400a-ba8c-61b14d772126)
-![슬라이드2](https://github.com/seoseuo/Chunja/assets/90320005/20dd7a39-2ce3-4246-919b-f2dceb119377)
+
 ![슬라이드3](https://github.com/seoseuo/Chunja/assets/90320005/da9eeff3-bc77-49c3-b125-9c4e8f4acf84)
 ![슬라이드4](https://github.com/seoseuo/Chunja/assets/90320005/9fb9673d-d0ef-4adb-b6f9-500f37c52996)
 ![슬라이드5](https://github.com/seoseuo/Chunja/assets/90320005/fb7bfb3d-1fb8-45af-8139-b3b7540a3767)
