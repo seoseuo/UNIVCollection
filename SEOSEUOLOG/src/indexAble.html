@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>  
+    <meta charset="UTF-8">
+    <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+
+    <script src="./move.js">
+
+    </script>
+
+    <script>
+
+        var a = 0;
+
+
+        var files = ["../pics/ableone.png",
+            "../pics/ablesec.png",
+            "../pics/ablelast.png",
+        ];
+
+        var details = [
+            "22년도 여름 정보과학 대학 학생회 A:ble에서 주최한<br>W.O.W(War Of Water) 축제를 진행하여 전교의 많은<br>학우들에게 즐거움을 선사했습니다.",
+            "체육부장으로서 정보과학대학 체육대회를 주최, 기획, 진행 하였고 정보과학대학 내의 다양한 운동 동아리들과 학과들이 스포츠 실력을 겨루며 성과를 내었습니다.",
+            "정과대 학우들과 조경철 천문대를 방문하여 천체 망원경으로 달을 비롯한 태양계 행성들을 관측하며<br>색다른 경험을 선사했습니다.",
+           ];
+
+        var titles = [
+        "정보과학대학 축제 W.O.W",
+        "정보과학대학 체육대회",
+        "조경철 천문대 방문답사",
+        ];
+
+
+        var imgs = new Array();
+
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image(); // 이미지 객체 생성
+            imgs[i].src = files[i]; // 이미지 로딩
+        }
+
+
+        function move(x) {
+            
+
+            var i1 = document.getElementById("pics1");
+            var t1 = document.getElementById("title1");
+            var d1 = document.getElementById("detail1");
+
+
+
+
+            if (x == 0) { //후진이요
+
+                a--;
+
+
+                if (a==-1 ) {
+                    a=2;
+                }
+
+                i1.style.width=
+                i1.src = imgs[a].src;
+                t1.innerHTML = titles[a];
+                d1.innerHTML = details[a];
+            
+
+            }
+
+
+
+            if (x == 2) { //전진이요
+
+                a++;
+
+                if (a==3) {
+                    a = 0;
+                }
+
+                i1.src = imgs[a].src;
+                t1.innerHTML = titles[a];
+                d1.innerHTML = details[a];
+
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <style>
+
+        :root {
+            --maincolor : #322977 ;
+        }
+        body {   
+            background-color: rgb(200, 207, 221);    
+        }
+        .barMainButton:hover {
+            color: rgb(163, 163, 163);
+        }
+        
+    </style>
+</head>
+<body>
+    <br><br><br>
+    
+    <div><!---page1 --->
+       
+        <div> <!---바 메뉴 div-->
+
+            <ul class="myMenu">
+            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
+            
+             <li class="menu1">
+                <button class ="barButton" type="button"  >서승권</button>
+                <ul class="menu1_s submenu">
+                    <li onclick="goTo(1)">서승권이란?</li>
+                </ul>
+            </li>
+            
+            <li class="menu2">
+                <button class ="barButton" type="button"  >학업</button>
+                <ul class="menu2_s submenu">
+                    <li onclick="goTo(2)">이수 과목</li>
+                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu3">
+                <button class ="barButton" type="button">학생자치기구활동</button>
+                <ul class="menu3_s submenu">
+                    
+                    <li onclick="goTo(5)">A:ble</li>
+                    <li onclick="goTo(6)">Defy</li>
+                    <li onclick="goTo(7)">그,_림</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu4">
+                <button class ="barButton" type="button">방명록</button>
+                <ul class="menu3_s submenu">
+                    <li onclick="goTo(8)">방명록 쓰기</li>
+                </ul>
+            </li>
+            </ul>
+
+        </div><!---바 메뉴 div-->
+
+        <br><br><br>
+
+        <table style="width: 900px ;"> 
+        <tr> 
+            <td style="width: 400px;" >
+        
+                <div><!---왼쪽 타이틀,메인 사진-->
+            
+                    <div class="titleBody"> 
+        
+                    제 4대<br><span style="font-size: 48px;">소융대학 학생회</span><br>A:BLE
+           
+                    </div>     
+                    <br>     
+                    <img src="../pics/ABLE.png" alt="서승권 메인 사진" style="width: 340px; ; height: 340px" >
+                </div> <!--- 왼쪽 타이틀,메인 사진-->
+        
+            </td>
+
+            <td>
+
+                <div class="rightTitle">
+                    <b>A:ble의 체육부장<hr></b> 
+                </div>
+                
+                <br>
+
+                <div class="rightSection">
+                    <table style="width: 92%; " ;>
+                        <tr>
+                            <td>
+                                <img id="pics1" class="roundImg" src="../pics/ableone.png"
+                                    style="width: 400px; height:300px;">
+                               
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2 id="title1">정보과학대학 축제 W.O.W</h2>
+                                <span id="detail1">
+                                    22년도 여름 정보과학 대학 학생회 A:ble에서 주최한<br>
+                                    W.O.W(War Of Water) 축제를 진행하여 전교의 많은<br>
+                                    학우들에게 즐거움을 선사했습니다.
+                                </span>
+                            </td>
+                        </tr>
+
+                    </table>
+                    
+                    <p style="text-align: right;">
+                        <button class="moveButton" type="button" onclick="move(0)">이전</button>
+                        <button class="moveButton" type="button" onclick="move(2)">다음</button>
+                    </p>
+
+                    
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    </div><!---page1 --->
+</body>
+</html>

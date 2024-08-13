@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="./move.js">
+
+    </script>
+
+    <script>
+        var b = 0; //링크 잡기
+        var a = 0;
+        var v = 0; //비디오 카운트
+
+        var files = ["../pics/calcurproject.PNG",
+            "../pics/seoseuofolio.png",
+            "../pics/seoseuonews.png",
+            "../pics/imbeproject.PNG",
+
+        ];
+
+        var details = [
+            "안드로이드 스튜디오를 학교 강의로 배우기 전, 처음으로 만들어본 간단한 사칙 연산 계산기입니다.<br>구글링을 통해 지식을 습득하여 만든 간단한 프로그램 입니다. 이 간단한 프로젝트를 통해 안드로이드<br>스튜디오를 보다 쉽게 접할 수 있었습니다.",
+            "안드로이드 스튜디오, 코틀린, SQLite를 사용하여 만든 저만의 이력서 어플리케이션 입니다.<br>SEOSEUOLOG가 웹 콘텐츠라면,<br>SEOSEUOFOLIO는 모바일 어플리케이션 콘텐츠입니다.<br><br>",
+            "html5 , css , javascript를 사용하여 제작하게 된<br>인터넷 웹 신문입니다. 신문의 주제는 대한민국의 16강 진출 기념으로 카타르 월드컵과 축구 스포츠에 관한<br>내용들을 담았습니다.<br><br>",
+            "아직 미완성이며<br>구상 및 기획 단계에 있습니다.<br><br><br><br>"];
+
+        var titles = [
+        "사칙연산 안드로이드 어플리케이션",
+        "SEOSEUOFOLIO",
+        "인터넷 신문",
+        "IBSLEEP - raspberrypy"];
+
+        var links = ["https://github.com/seoseuo/arithmetic_calculator","noLink.html", //gitHub , Notion
+        "https://github.com/seoseuo/SEOSEUOFOLIO","https://www.notion.so/22-2-fb98dfd77d324ee7adca3882c4466b74",
+        "https://github.com/seoseuo/Sports_new","https://www.notion.so/0a53fa1c8f7949d1af6ee8b9326e3610",
+        "https://github.com/seoseuo/IBSleep","https://www.notion.so/22-2-98a8e1ee2edb4d04bb9485dec8a5356f"];
+
+        var pophtmls = ["calvideo.html","seoseuofoliovideo.html","newsvideo.html","ibvideo.html"];
+
+        var imgs = new Array();
+
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image(); // 이미지 객체 생성
+            imgs[i].src = files[i]; // 이미지 로딩
+        }
+
+
+        function move(x) {
+            
+
+            var i1 = document.getElementById("pics1");
+
+            var t1 = document.getElementById("title1");
+
+            var d1 = document.getElementById("detail1");
+
+            var b1 = document.getElementById("btn1");
+
+            var b2 = document.getElementById("btn2");
+
+            var v1 = document.getElementById("vedio1");
+
+
+
+            if (x == 0) { //후진이요
+
+                a--;
+                v--;
+                b-=2;
+
+                if (a==-1 && v==-1 && b<=-1) {
+                    a = 3;
+                    v = 3;
+                    b = 6;
+                }
+
+                i1.src = imgs[a].src;
+                t1.innerHTML = titles[a];
+                d1.innerHTML = details[a];
+
+                b1.href = links[b];
+                b2.href = links[b+1];
+            
+            
+
+            }
+
+
+
+            if (x == 2) { //전진이요
+
+                a++;
+                v++;
+                b+=2;
+                if (a==4 && v==4 && b>=7) {
+                    a = 0;
+                    v = 0;
+                    b = 0;
+                }
+
+                i1.src = imgs[a].src;
+
+                t1.innerHTML = titles[a];
+
+                d1.innerHTML = details[a];
+
+                b1.href = links[b];
+                b2.href = links[b+1];
+
+            }
+
+        }
+
+        function popvideo() {
+            if(v==0 || v==1) {window.open(pophtmls[v],"_black","width=400px, height=1500px");} //핸드폰 어플 영상
+            else if(v==2) {window.open(pophtmls[v],"_black","width=980px, height=530px");} //뉴스 영상
+            else {window.open(pophtmls[v],"_black","width=20px, height=30px");} //임베디드 영상
+            
+        }
+
+
+
+    </script>
+
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <style>
+        :root {
+            --maincolor: #e5d7bf;
+        }
+
+        body {
+            background-color: rgb(55, 33, 9);
+        }
+
+        .barMainButton:hover {
+            color: rgb(163, 163, 163);
+        }
+        #video1 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>x`
+    <br><br><br>
+
+    <div><!---page1 --->
+
+        <div> <!---바 메뉴 div-->
+
+            <ul class="myMenu">
+                <button class="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
+
+                <li class="menu1">
+                    <button class="barButton" type="button">서승권</button>
+                    <ul class="menu1_s submenu">
+                        <li onclick="goTo(1)">서승권이란?</li>
+                    </ul>
+                </li>
+
+                <li class="menu2">
+                    <button class="barButton" type="button">학업</button>
+                    <ul class="menu2_s submenu">
+                        <li onclick="goTo(2)">이수 과목</li>
+                        <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                    </ul>
+                </li>
+
+
+                <li class="menu3">
+                    <button class="barButton" type="button">학생자치기구활동</button>
+                    <ul class="menu3_s submenu">
+
+                        <li onclick="goTo(5)">A:ble</li>
+                        <li onclick="goTo(6)">Defy</li>
+                        <li onclick="goTo(7)">그,_림</li>
+                    </ul>
+                </li>
+
+
+                <li class="menu4">
+                    <button class="barButton" type="button">방명록</button>
+                    <ul class="menu3_s submenu">
+                        <li onclick="goTo(8)">방명록 쓰기</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!---바 메뉴 div-->
+
+        <br><br><br>
+
+        <table style="width: 900px ;">
+            <tr>
+                <td style="width: 400px;">
+
+                    <div><!---왼쪽 타이틀,메인 사진-->
+
+                        <div class="titleBody">
+
+                            프로젝트<br>및<br>결과물
+
+                        </div>
+                        <img src="../pics/navpic.png" alt="서승권 메인 사진"
+                            style="width: 100%; ; height: 100% ; margin-top : -60px">
+                    </div> <!--- 왼쪽 타이틀,메인 사진-->
+
+                </td>
+
+                <td>
+
+                    <div class="rightTitle">
+                        <b>프로젝트와 결과물<br></b>
+                        <hr>
+                    </div>
+
+
+                    <div class="rightSection">
+
+                        <table style="width: 92%; " ;>
+                            <tr>
+                                <td>
+                                    <img id="pics1" class="roundImg" src="../pics/calcurproject.PNG"
+                                        style="width: 100%; height:60%;">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <h2 id="title1">사칙연산 안드로이드 어플리케이션</h2>
+                                    <span id="detail1">
+                                        안드로이드 스튜디오를 학교 강의로 배우기 전, 처음으로 만들어본 간단한 사칙 연산 계산기입니다.<br>
+                                        구글링을 통해 지식을 습득하여 만든 간단한 프로그램 입니다. 이 간단한 프로젝트를 통해 안드로이드<br>
+                                        스튜디오를 보다 쉽게 접할 수 있었습니다.
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        
+                        <a id="btn1" href="https://github.com/seoseuo/SEOSEUOLOG"><img class = "roundImg" src="../pics/githubicon.png"  style="width: 50px; height : 50px ;"></a>
+                        
+                        <a id="btn2" href="noLink.html"><img class = "roundImg" src="../pics/notionicon.png"  style="width: 50px; height : 50px ;"></a>
+                        
+                        <img onclick="popvideo()" id = "video1" class = "roundImg" src="../pics/video.png" style="width: 50px; height : 50px ;">
+                
+                        <p style="text-align: right;">
+                            <button class="moveButton" type="button" onclick="move(0)">이전</button>
+                            <button class="moveButton" type="button" onclick="move(2)">다음</button>
+                        </p>
+
+
+
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div><!---page1 --->
+</body>
+
+</html>
