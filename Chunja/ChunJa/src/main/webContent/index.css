@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'CJFONT';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.logo {
+    
+    margin-left: 20px;
+    cursor: pointer;
+    width: 150px;
+    line-height: 100px;
+    padding-top: 15px;
+}
+
+body,
+html {
+    font-family: 'CJFONT';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+    margin: 0;
+}
+
+.title {
+    background-color: #FFF3FD;
+    height: 100px;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url(pics/indexBG.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    width: 100%;
+    height: 86.5%;
+
+    text-align: center;
+
+
+}
+
+.title-sfont {
+    margin-top: 120px;
+    font-family: 'CJFONT';
+    color: #FFF3FD;
+    font-size: 50px;
+}
+
+.title-lfont {
+    font-family: 'CJFONT';
+    color: #FFF3FD;
+    font-size: 80px;
+}
+
+.index-border {
+    display: inline-block;
+    position: absolute;
+    display: inline-block;
+    font-family: 'CJFONT';
+
+    font-size: 25px;
+
+    border: solid 5px #FFF3FD;
+
+    color: white;
+    width: 200px;
+    height: 100px;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+    line-height: 100px;
+
+}
+
+.index-box {
+    
+    display: inline-block;
+    position: relative;
+    background-color: #FFF3FD;
+
+    opacity: 10%;
+
+    width: 210px;
+    height: 110px;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+    line-height: 100px;
+
+}
+
+.index-box:hover {
+    opacity: 50%;
+}
+
+.login-border {
+    border: solid 5px #FFF3FD;
+
+    display: inline-block;
+    position: absolute;
+    margin-top: 150px;
+    font-family: 'CJFONT';
+    width: 500px;
+    height: 400px;
+}
+
+.login-box {
+    display: inline-block;
+    position: relative;
+    color: #3B3838;
+    margin-top: 150px;
+    background-color: #FFF3FD;
+    width: 510px;
+    height: 410px;
+    opacity: 90%;
+    font-family: 'CJFONT';
+}
+
+.index-back-btn {
+    
+    color: #3B3838;
+    font-size: 35px;
+    opacity: 100%;
+    cursor: pointer;
+    width: 35px;
+    height: 36px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 465px;
+}
+
+.login-font {
+    font-family: 'CJFONT';
+    color: #3B3838;
+}
+
+.input-box {
+    opacity: 100%;
+    margin-top: 20px;
+    border: #3B3838 solid 3px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.submit-box {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #3B3838;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.submit-box:hover {
+    opacity: 80%;
+}
+
+.login-bottom {
+    font-family: 'CJFONT';
+    text-align: right;
+    margin-right: 10px;
+}
+
+.title-back {
+    background-image: url('pics/titleBG.jpg');
+    width: 100%;
+    height: 263px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+
+.title-section {
+    width: 800px;
+    margin-left: 100px;
+}
+
+.s1 {
+    font-size: 30px; color :rgb(178, 0, 0);
+    cursor: pointer;
+}
+.s1:hover {
+    opacity: 50%;
+}
+
+.s2 {
+    font-size: 30px; color :#3B3838;
+    cursor: pointer;
+}
+.s2:hover {
+    opacity: 50%;
+}
+
+.RankView {
+        margin: 0 auto;
+        border: solid 2px rgb(255, 226, 226);
+        background-color: #FFF3FD;
+        width: 1200px;
+        height: 300px;
+        border-spacing: 150px 30px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+    }
+
+    th {
+        font-size: 40px;
+    }
+
+    .view-Box {
+        width: 270px;
+        cursor: pointer;
+        border: solid 1px #383838;
+        text-align: center;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin:0 0 20px 0;
+    }
+
+    .view-Pic {
+        height: 170px;
+        width: 190px;
+        background-size: cover;
+        padding: 0;
+        border-radius: 10px;
+        border: 1px #383838 solid;
+    }
+
+    .view-Title {
+        font-size: 20px;
+        color: #383838;
+    }
+
+    .view-flower {
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .user {
+        margin-left : 950px;
+    }
+
+    .logout-box {
+        font-size: smaller;
+        border-radius: 10px;
+        background-color: #3B3838;
+        color: white;
+        cursor: pointer;
+    }
+
+    .serachbox {
+        border: #3B3838 solid 3px;
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .serachsubmit {
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #3B3838;
+        color: white;
+        cursor: pointer;
+    }
+
+    .view-section {
+        display: flex;
+        height: 380px;
+
+    }
+
+    .view-left {
+        flex:1;
+        height: 380px;
+    }
+
+    .view-intro {
+        border: 2px solid rgb(255, 226, 226);
+        background-color: #FFF3FD;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .view-center {
+        flex:1;
+        height: 380px;
+    }
+
+    .view-center-pic {
+        background-color: #FFF3FD;
+        width: 470px;
+        height: 280px;
+        border-radius: 20px;
+    }
+
+    .view-center-comment {
+        background-color: #FFF3FD;
+        width: 470px;
+        height: 130px;
+        border-radius: 20px;
+    }
+
+    .view-right {
+        flex:1;
+        height: 380px;
+    }
+
+    .view-section-title {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        color: #383838
+    }
+
+    .hr1 {
+        width: 250px;
+        height: 2px;
+        background-color: #383838;
+    }
+
+    input,pre {
+        font-family: 'CJFONT';
+    }
+    textarea {
+        resize: none;
+        font-family: 'CJFONT';
+    }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>  
+    <meta charset="UTF-8">
+ 
+    <title>서승권의 블로그에 오신 것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+
+    <script src="./move.js">
+
+    </script>
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <style>
+        :root {
+            --maincolor : #ae1e1e ;
+        }
+        body {
+            background-color: rgb(255, 230, 230);  
+        }
+        .barMainButton:hover {
+            color: rgb(163, 163, 163);
+        }
+
+
+    </style>
+</head>
+<body>
+    <br><br><br>
+    
+    <div><!---page1 --->
+       
+        <div> <!---바 메뉴 div-->
+
+            <ul class="myMenu">
+            <button class ="barMainButton" type="button" onclick="goTo(0)">서승로그,</button>
+            
+             <li class="menu1">
+                <button class ="barButton" type="button"  >서승권</button>
+                <ul class="menu1_s submenu">
+                    <li onclick="goTo(1)">서승권이란?</li>
+                </ul>
+            </li>
+            
+            <li class="menu2">
+                <button class ="barButton" type="button"  >학업</button>
+                <ul class="menu2_s submenu">
+                    <li onclick="goTo(2)">이수 과목</li>
+                    <li onclick="goTo(3)">프로젝트 및 결과물</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu3">
+                <button class ="barButton" type="button">학생자치기구활동</button>
+                <ul class="menu3_s submenu">
+                    <li onclick="goTo(4)">H-all</li>
+                    <li onclick="goTo(5)">A:ble</li>
+                    <li onclick="goTo(6)">Defy</li>
+                    <li onclick="goTo(7)">그,_림</li>
+                </ul>
+            </li>
+            
+
+            <li class="menu4">
+                <button class ="barButton" type="button">개발일지</button>
+                <ul class="menu3_s submenu">
+                    <li onclick="goTo(8)">블로그 개발일지</li>
+                </ul>
+            </li>
+            </ul>
+
+        </div><!---바 메뉴 div-->
+
+        <br><br><br>
+
+        <table style="width: 900px ;"> 
+        <tr> 
+            <td style="width: 400px;" >
+        
+                <div><!---왼쪽 타이틀,메인 사진-->
+            
+                    <div class="titleBody"> 
+        
+                    제 37대<br><span style="font-size: 40px;">총학생회 선거캠프</span><br>H-all
+           
+                    </div>     
+                    <br>    
+                    <img src="../pics/hall.png" alt="서승권 메인 사진" style="width: 340px; ; height: 340px" >
+                </div> <!--- 왼쪽 타이틀,메인 사진-->
+        
+            </td>
+
+            <td>
+
+                <div class="rightTitle">
+                    <b>모두를 위한<br>한림을 위한<hr></b> 
+                </div>
+                
+                <br>
+
+                <div class="rightSection">
+                    안녕하세요? 여기서 입력할 내용들을 입력해주면 됩니다.
+
+                    
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    </div><!---page1 --->
+</body>
+</html>

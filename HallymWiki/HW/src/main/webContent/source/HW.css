@@ -1,0 +1,117 @@
+
+    html,
+    body {
+        height: 100%;
+        background-color: rgb(47, 47, 47);
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .titleBox {
+        background-color: azure;
+        height: 100px;
+        width: 99%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 130px;
+        cursor: pointer;
+    }
+
+    .btn {
+        color: black;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: rgb(178, 191, 191);
+        font-size: xx-large;
+    }
+
+    .btn:hover {
+        background-color: rgb(74, 88, 88);
+        color: white;
+    }
+
+    .container {
+        text-align: center;
+        display: flex;
+        color: white;
+        height: 100%;
+    }
+
+    .content {
+        text-align: left;
+        margin-left: 30px 
+    }
+
+    .leftBox {
+        padding-top: 50px;
+        background: rgb(47, 47, 47);
+        flex: 1;
+    }
+
+
+    .centerBox {
+        height: 100%;
+        padding-top: 30px;
+        background-color: rgb(79, 79, 79);
+        flex: 3;
+
+    }
+
+    .rightBox {
+        text-align: center;
+        padding-top: 50px;
+        background: rgb(47, 47, 47);
+        flex: 1;
+    
+    }
+
+    .rankBox
+    {
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+        background-color: gray;
+        border-radius: 10px;
+
+    }
+    
+    .rankBox>.rankContent {
+        margin: 0 auto;
+        width: 80%;
+        background-color: rgb(79, 79, 79);
+        border-radius: 10px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+
+    .add {
+        margin-top: 40px;
+        border-radius: 10px;
+        width: 90%;
+        height: 60%;
+    }
+
+    input {
+        outline: none;
+    }
+
+    a:link { color: white; text-decoration: none;}
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: white; text-decoration: none;}
+
+    
